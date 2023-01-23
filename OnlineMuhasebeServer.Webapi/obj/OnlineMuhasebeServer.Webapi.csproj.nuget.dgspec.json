@@ -30,6 +30,9 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+              "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Application.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Application.csproj"
+              },
               "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Persistence.csproj": {
                 "projectPath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Persistence.csproj"
               }
@@ -131,7 +134,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

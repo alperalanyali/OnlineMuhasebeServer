@@ -29,7 +29,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/Domain.csproj": {
+                "projectPath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

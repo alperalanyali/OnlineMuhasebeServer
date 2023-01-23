@@ -34,4 +34,7 @@
     <Folder Include="Services\AppServices\" />
     <Folder Include="Services\CompanyServices\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
 </Project>

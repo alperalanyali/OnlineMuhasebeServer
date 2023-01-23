@@ -5,6 +5,7 @@ using Domain.AppEntities.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace Persistence.Context
 {
@@ -45,6 +46,18 @@ namespace Persistence.Context
                 }
             }
             return base.AddAsync(entity, cancellationToken);
+        }
+
+        public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+        {
+            public AppDbContext CreateDbContext(string[] args)
+            {
+                var optionsBuilder = new DbContextOptionsBuilder();
+                var connectionString = "Data Source=localhost;Initial Catalog=MuhasebeMasterDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;Trusted_Connection=False;User ID=sa;Password=metallica1;";
+                optionsBuilder.UseSqlServer(connectionString);
+
+                return new AppDbContext(optionsBuilder.Options);
+            }
         }
     }
 }

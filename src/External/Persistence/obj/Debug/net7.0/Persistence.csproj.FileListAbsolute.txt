@@ -1,17 +1,5 @@
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Persistence.deps.json
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Persistence.runtimeconfig.json
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Persistence.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Persistence.pdb
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Domain.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/bin/Debug/net7.0/Domain.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.csproj.AssemblyReference.cache
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfoInputs.cache
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.AssemblyInfo.cs
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.csproj.CoreCompileInputs.cache
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.csproj.CopyComplete
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/refint/Persistence.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.pdb
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/Persistence.genruntimeconfig.cache
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/obj/Debug/net7.0/ref/Persistence.dll
