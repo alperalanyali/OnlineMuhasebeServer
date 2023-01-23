@@ -1,0 +1,14 @@
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/bin/Debug/net7.0/Domain.deps.json
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/bin/Debug/net7.0/Domain.runtimeconfig.json
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/bin/Debug/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/refint/Domain.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Domain/obj/Debug/net7.0/ref/Domain.dll

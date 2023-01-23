@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yAx92D0RPjgwx0fKs3IRHoWYYebZdRGqEgy8HU/poy7lWbOxkhMqRzMjZAgrjm6HYpApfFGlG4T0gF/GUsw7iw==",
+  "success": true,
+  "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

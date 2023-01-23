@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Context/AppDbContext.cs">
+    <Files>
+      <File FileName="OnlineMuhasebeServer.Webapi/appsettings.json" Line="10" Column="15" />
+      <File FileName="OnlineMuhasebeServer.Webapi/Program.cs" Line="11" Column="78" />
+      <File FileName="src/Core/Domain/Abstractions/Entity.cs" Line="8" Column="31" />
+      <File FileName="src/Core/Domain/AppEntities/Company.cs" Line="8" Column="9" />
+      <File FileName="src/Core/Domain/AppEntities/AppUserCompany.cs" Line="16" Column="25" />
+      <File FileName="src/External/Persistence/Context/AppDbContext.cs" Line="17" Column="43" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineMuhasebeServer" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="Application" expanded="True" />
+                <Node name="Domain" expanded="True">
+                  <Node name="Abstractions" expanded="True" />
+                  <Node name="AppEntities" expanded="True">
+                    <Node name="Identity" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="External" expanded="True">
+                <Node name="Infrastructure" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Dependencies" expanded="True" />
+                  <Node name="Context" expanded="True">
+                    <Node name="AppDbContext.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="OnlineMuhasebeServer.Webapi" expanded="True">
+              <Node name="Abstraction" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.src.External.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.src.Core.Domain FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.src.External.Persistence FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.src.Core.Application FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>
