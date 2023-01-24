@@ -22,6 +22,7 @@
     <None Remove="Services\CompanyServices\" />
     <None Remove="AutoMapper" />
     <None Remove="Mapping\" />
+    <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
@@ -46,6 +47,7 @@
     <Folder Include="Services\AppServices\" />
     <Folder Include="Services\CompanyServices\" />
     <Folder Include="Mapping\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />

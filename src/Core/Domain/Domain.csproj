@@ -14,12 +14,14 @@
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
     <None Remove="Abstractions\" />
     <None Remove="CompanyEntities\" />
+    <None Remove="Repository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
     <Folder Include="AppEntities\Identity\" />
     <Folder Include="Abstractions\" />
     <Folder Include="CompanyEntities\" />
+    <Folder Include="Repository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
