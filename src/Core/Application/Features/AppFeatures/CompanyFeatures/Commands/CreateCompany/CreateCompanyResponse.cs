@@ -1,9 +1,10 @@
 ﻿using System;
 namespace Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany
 {
-	public class CreateCompanyResponse
+	public sealed class CreateCompanyResponse
 	{
-		
+		public string Message { get; set; } = "Şirket başarılı şekilde oluşturuldu";
+
 	}
 }
 

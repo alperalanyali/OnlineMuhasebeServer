@@ -18,6 +18,7 @@
     <None Remove="Services\" />
     <None Remove="Services\AppServices\" />
     <None Remove="Services\CompanyServices\" />
+    <None Remove="Features\AppFeatures\CompanyFeatures\Commands\MigrateCompanyDatabase\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -33,6 +34,7 @@
     <Folder Include="Services\" />
     <Folder Include="Services\AppServices\" />
     <Folder Include="Services\CompanyServices\" />
+    <Folder Include="Features\AppFeatures\CompanyFeatures\Commands\MigrateCompanyDatabase\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

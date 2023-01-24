@@ -11,11 +11,6 @@ namespace Persistence.Services.AppServices
     public class CompanyService : ICompanyService
     {
 
-        private static readonly Func<AppDbContext, string, Task<Company?>> GetCompanyByNameCompiled =
-            EF.CompileAsyncQuery(AppDbContext context,string name) =>
-            {
-                await _dbContext.Set<Company>().FirstOrDefault(p => p.Name == name)
-            };
         private readonly AppDbContext _dbContext;
         private readonly IMapper _mapper;
         public CompanyService(AppDbContext dbContext,IMapper mapper)
@@ -32,9 +27,20 @@ namespace Persistence.Services.AppServices
             await _dbContext.SaveChangesAsync();
         }
 
-        public async Task<Company> GetCompanyByName(string name)
+        public async Task<Company?> GetCompanyByName(string name)
         {
-            return ;
+            return await _dbContext.Set<Company>().FirstOrDefaultAsync(p => p.Name == name);
+        }
+
+        public async Task MigrateCompanyDatabases()
+        {
+            var companies = await _dbContext.Set<Company>().ToListAsync();
+            foreach (var company in companies)
+            {
+                var db = new CompanyDbContext(company);
+                db.Database.Migrate();
+            }
+
         }
     }
 }

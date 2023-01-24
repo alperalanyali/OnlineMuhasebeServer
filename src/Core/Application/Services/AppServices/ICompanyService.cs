@@ -7,7 +7,8 @@ namespace Application.Services.AppServices
 	public interface ICompanyService
 	{
 		Task CreateCompany(CreateCompanyRequest request);
-		Task<Company> GetCompanyByName(string name);
+		Task<Company?> GetCompanyByName(string name);
+		Task MigrateCompanyDatabases();
 	}
 }
 
