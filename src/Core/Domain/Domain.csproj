@@ -15,6 +15,7 @@
     <None Remove="Abstractions\" />
     <None Remove="CompanyEntities\" />
     <None Remove="Repository\" />
+    <None Remove="Repository\UCAFRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
@@ -22,6 +23,7 @@
     <Folder Include="Abstractions\" />
     <Folder Include="CompanyEntities\" />
     <Folder Include="Repository\" />
+    <Folder Include="Repository\UCAFRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />

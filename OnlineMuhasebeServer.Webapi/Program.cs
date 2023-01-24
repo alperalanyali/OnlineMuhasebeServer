@@ -1,12 +1,18 @@
 ﻿using Application.Services.AppServices;
+using Application.Services.CompanyServices;
+using Domain;
 using Domain.AppEntities.Identity;
+using Domain.Repository.UCAFRepositories;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Persistence;
 using Persistence.Context;
+using Persistence.Repositories.UCAFRepositories;
 using Persistence.Services.AppServices;
+using Persistence.Services.CompanyServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +23,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddScoped<ICompanyService, CompanyService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IUCAFCommandRepository, UCAFCommandRepository>();
+builder.Services.AddScoped<IUCAFQueryRepository, UCAFQueryRepository>();
+builder.Services.AddScoped<IContextService, ContextService>();
+builder.Services.AddScoped<IUCAFService, UCAFService>();
+
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddControllers();
 builder.Services.AddMediatR(typeof(Application.AssemblyReference).Assembly);

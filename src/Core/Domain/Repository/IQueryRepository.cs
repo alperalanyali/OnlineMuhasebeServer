@@ -5,7 +5,7 @@ using Domain.Abstractions;
 
 namespace Domain.Repository
 {
-	public interface IQueryRepository<T> where T: Entity
+	public interface IQueryRepository<T>: IRepository<T> where T: Entity 
 	{
 		IQueryable<T> GetAll();
 		IQueryable<T> GetWhere(Expression<Func<T,bool>> expression);

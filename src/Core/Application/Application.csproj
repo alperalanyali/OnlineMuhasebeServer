@@ -19,6 +19,10 @@
     <None Remove="Services\AppServices\" />
     <None Remove="Services\CompanyServices\" />
     <None Remove="Features\AppFeatures\CompanyFeatures\Commands\MigrateCompanyDatabase\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\Queries\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -35,6 +39,10 @@
     <Folder Include="Services\AppServices\" />
     <Folder Include="Services\CompanyServices\" />
     <Folder Include="Features\AppFeatures\CompanyFeatures\Commands\MigrateCompanyDatabase\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\Queries\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
