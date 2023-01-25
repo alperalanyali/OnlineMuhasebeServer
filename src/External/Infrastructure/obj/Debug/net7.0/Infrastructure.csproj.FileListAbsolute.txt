@@ -10,3 +10,8 @@
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/obj/Debug/net7.0/refint/Infrastructure.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/obj/Debug/net7.0/Infrastructure.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/obj/Debug/net7.0/ref/Infrastructure.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/bin/Debug/net7.0/Application.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/bin/Debug/net7.0/Application.pdb
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/bin/Debug/net7.0/Domain.pdb
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/obj/Debug/net7.0/Infrastructure.csproj.CopyComplete

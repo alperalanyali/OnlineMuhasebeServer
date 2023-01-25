@@ -49,12 +49,12 @@ EF.CompileAsyncQuery((CompanyDbContext context, Expression<Func<T, bool>> expres
 
         public async Task<T> GetFirst( bool isTracking = true)
         {
-            return await GetFirstCompiled(_context);
+            return await GetFirstCompiled(_context,isTracking);
         }
 
         public async Task<T> GetFirstByExpression(Expression<Func<T, bool>> expression, bool isTracking = true)
         {
-            return await GetFirstByExpressionCompiled(_context, expression);
+            return await GetFirstByExpressionCompiled(_context, expression,isTracking);
         }
 
         public IQueryable<T> GetWhere(Expression<Func<T, bool>> expression, bool isTracking = true)

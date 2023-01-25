@@ -23,6 +23,11 @@
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Queries\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
+    <None Remove="Abstractions\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Login\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -43,6 +48,11 @@
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Queries\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
+    <Folder Include="Abstractions\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\Login\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

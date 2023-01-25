@@ -86,3 +86,5 @@
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/ref/OnlineMuhasebeServer.Webapi.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.pdb
