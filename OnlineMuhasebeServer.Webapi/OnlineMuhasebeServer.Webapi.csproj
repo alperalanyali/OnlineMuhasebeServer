@@ -29,10 +29,12 @@
     <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
     <None Remove="AutoMapper" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Configurations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Abstraction\" />
+    <Folder Include="Configurations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\External\Persistence\Persistence.csproj">
