@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppFeatures.AppUserFeatures.RoleFeatures.Commands.CreateRole;
+using Application.Features.AppFeatures.RoleFeatures.Commands.DeleteRole;
+using Application.Features.AppFeatures.RoleFeatures.Commands.UpdateRole;
 using Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -30,6 +32,20 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         {
             GelAllRolesRequest request = new GelAllRolesRequest();
             GetAllRequestResponse response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+        [HttpPut("[action]")]
+        public async Task<IActionResult> UpdateRole(UpdateRoleRequest request)
+        {
+            UpdateRoleResponse response = await _mediatR.Send(request);
+
+            return Ok(response);
+        }
+        [HttpDelete("[action]")]
+        public async Task<IActionResult> DeleteROle(DeleteRoleRequest request)
+        {
+            var response = await _mediatR.Send(request);
 
             return Ok(response);
         }

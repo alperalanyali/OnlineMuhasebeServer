@@ -1,4 +1,5 @@
 ﻿using System;
+using Application.Services.AppServices;
 using Domain.AppEntities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -8,29 +9,24 @@ namespace Application.Features.AppFeatures.AppUserFeatures.RoleFeatures.Commands
 {
     public sealed class CreateRoleHandler : IRequestHandler<CreateRoleRequest, CreateRoleResponse>
     {
-        private readonly RoleManager<AppRole> _roleManager;
-        public CreateRoleHandler(RoleManager<AppRole>  roleManager)
+        private readonly IRoleService _roleService;
+        public CreateRoleHandler(IRoleService roleService)
         {
-            _roleManager = roleManager;
+            _roleService = roleService;
         }
-
 
         public async Task<CreateRoleResponse> Handle(CreateRoleRequest request, CancellationToken cancellationToken)
         {
             var response = new CreateRoleResponse();
-            AppRole role = await _roleManager.Roles.Where(p => p.Code == request.Code).FirstOrDefaultAsync();
+            AppRole role = await _roleService.GetByCode(request.Code);
 
             if(role != null)
             {
                 throw new Exception("Bu rol daha once eklenmistir");
             }
-            role =new AppRole(){
-                Id = Guid.NewGuid().ToString(),
-                Code = request.Code,
-                Name = request.Name
-            };
+         
             response.IsSuccess = true;
-            await _roleManager.CreateAsync(role);           
+            await _roleService.AddAsync(request);           
             return response ;
         }
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using Application.Services.AppServices;
 using Domain.AppEntities.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
@@ -8,19 +9,16 @@ namespace Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles
 {
     public sealed class GetAllRolesHandler : IRequestHandler<GelAllRolesRequest, GetAllRequestResponse>
     {
-        private readonly RoleManager<AppRole> _roleManager;
-        public GetAllRolesHandler(RoleManager<AppRole> roleManager)
-        {
-            _roleManager = roleManager;
-        }
+        private readonly IRoleService _roleService;
 
+        public GetAllRolesHandler(IRoleService roleService)
+        {
+            _roleService = roleService;
+        }
         public async Task<GetAllRequestResponse> Handle(GelAllRolesRequest request, CancellationToken cancellationToken)
         {
-            
-            List<AppRole> roles = await _roleManager.Roles/*.
-                                           Where(p => p.Code.ToLower().Contains(request.Search.ToLower())
-                                           || p.Name.ToLower().Contains(request.Search.ToLower()))*/
-                                           .ToListAsync();
+
+            IList<AppRole> roles = await _roleService.GetAllRolesAsync();
             var response = new GetAllRequestResponse() { results = roles.Count,Roles = roles};
 
             return response;

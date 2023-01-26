@@ -23,6 +23,7 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             services.AddScoped<IUCAFCommandRepository, UCAFCommandRepository>();
             services.AddScoped<IUCAFQueryRepository, UCAFQueryRepository>();
             services.AddScoped<IUCAFService, UCAFService>();
+            services.AddScoped<IRoleService, RoleServices>();
         }
     }
 }
