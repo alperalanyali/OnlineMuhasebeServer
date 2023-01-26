@@ -61,9 +61,11 @@
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Application.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Domain.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Persistence.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Persistence.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Application.pdb
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Domain.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.csproj.AssemblyReference.cache
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.GeneratedMSBuildEditorConfig.editorconfig
@@ -86,5 +88,3 @@
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.pdb
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/OnlineMuhasebeServer.Webapi.genruntimeconfig.cache
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/obj/Debug/net7.0/ref/OnlineMuhasebeServer.Webapi.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.dll
-/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Infrastructure.pdb

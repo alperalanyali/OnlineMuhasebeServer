@@ -2,6 +2,7 @@
 using Domain.Abstractions;
 using Domain.AppEntities;
 using Domain.AppEntities.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -28,6 +29,16 @@ namespace Persistence.Context
             }
 
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+
+            builder.Ignore<IdentityUserLogin<string>>();
+            builder.Ignore<IdentityUserRole<string>>();
+            builder.Ignore<IdentityUserClaim<string>>();
+            builder.Ignore<IdentityUserToken<string>>();
+            builder.Ignore<IdentityRoleClaim<string>>();
+        }
+
         public DbSet<Company> Company { get; set; }
 		public DbSet<AppUserCompany> UserCompany { get; set; }
 
