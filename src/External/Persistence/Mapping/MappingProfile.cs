@@ -1,9 +1,11 @@
 ﻿using System;
+using Application.Features.AppFeatures.AppUserFeatures.RoleFeatures.Commands.CreateRole;
 using Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany;
 using Application.Features.CompanyFeatures.UCAFFeatures.Commands.CreateUCAF;
 using AutoMapper;
 using Domain.AppEntities;
 using Domain.CompanyEntities;
+using Microsoft.AspNetCore.Identity;
 
 namespace Persistence.Mapping
 {
@@ -13,6 +15,7 @@ namespace Persistence.Mapping
 		{
 			CreateMap<CreateCompanyRequest, Company>().ReverseMap();
 			CreateMap<CreateUCAFRequest, UCAF>().ReverseMap();
+			CreateMap<CreateRoleRequest, IdentityRole>().ReverseMap();
 		}
 	}
 }

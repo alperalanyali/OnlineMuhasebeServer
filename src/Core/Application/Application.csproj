@@ -28,6 +28,9 @@
     <None Remove="Features\AppFeatures\AppUserFeatures\Login\" />
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\" />
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
+    <None Remove="Features\AppFeatures\RoleFeatures\" />
+    <None Remove="Features\AppFeatures\RoleFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\RoleFeatures\Queries\GetAllRoles\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -53,6 +56,9 @@
     <Folder Include="Features\AppFeatures\AppUserFeatures\Login\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
+    <Folder Include="Features\AppFeatures\RoleFeatures\" />
+    <Folder Include="Features\AppFeatures\RoleFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\RoleFeatures\Queries\GetAllRoles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
