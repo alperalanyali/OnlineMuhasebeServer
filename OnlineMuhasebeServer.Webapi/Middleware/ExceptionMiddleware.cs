@@ -1,4 +1,5 @@
 ﻿using System;
+using FluentValidation;
 using Microsoft.AspNetCore.Http;
 
 namespace OnlineMuhasebeServer.Webapi.Middleware
@@ -21,7 +22,14 @@ namespace OnlineMuhasebeServer.Webapi.Middleware
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)StatusCodes.Status500InternalServerError;
-
+            if(ex.GetType() == typeof(ValidationException))
+            {
+                return context.Response.WriteAsync( new ValidationErrorDetail
+                {
+                    Errors = ((ValidationException)ex).Errors.Select(s => s.PropertyName),
+                    StatusCode = context.Response.StatusCode
+                }.ToString());
+            }
             return context.Response.WriteAsync(new ErrorResult
             {
 
