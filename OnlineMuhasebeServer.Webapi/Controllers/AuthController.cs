@@ -19,7 +19,7 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Login(LoginRequest request)
+        public async Task<IActionResult> Login(LoginCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);

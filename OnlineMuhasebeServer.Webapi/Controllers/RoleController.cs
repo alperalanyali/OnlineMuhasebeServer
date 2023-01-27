@@ -21,9 +21,9 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Create(CreateRoleRequest request)
+        public async Task<IActionResult> Create(CreateRoleCommand request)
         {
-            CreateRoleResponse response = await _mediatR.Send(request);
+            CreateRoleCommandResponse response = await _mediatR.Send(request);
             return Ok(response);
         }
 
@@ -43,7 +43,7 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
             return Ok(response);
         }
         [HttpDelete("[action]")]
-        public async Task<IActionResult> DeleteROle(DeleteRoleRequest request)
+        public async Task<IActionResult> DeleteROle(DeleteRoleCommand request)
         {
             var response = await _mediatR.Send(request);
 

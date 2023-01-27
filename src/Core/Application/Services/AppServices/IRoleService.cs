@@ -10,7 +10,7 @@ namespace Application.Services.AppServices
 	{
 		Task<IList<AppRole>> GetAllRolesAsync();
 		Task<AppRole> GetById(string id);
-		Task AddAsync(CreateRoleRequest request);
+		Task AddAsync(CreateRoleCommand request);
 		Task UpdateAsync(AppRole role);
 		Task DeleteByIdAsync(string id);
 		Task<AppRole> GetByCode(string code);

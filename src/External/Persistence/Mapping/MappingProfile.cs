@@ -16,11 +16,11 @@ namespace Persistence.Mapping
 	{
 		public MappingProfile()
 		{
-			CreateMap<CreateCompanyRequest, Company>().ReverseMap();
-			CreateMap<CreateUCAFRequest, UCAF>().ReverseMap();
-			CreateMap<CreateRoleRequest, IdentityRole>().ReverseMap();
+			CreateMap<CreateCompanyCommand, Company>().ReverseMap();
+			CreateMap<CreateUCAFCommand, UCAF>().ReverseMap();
+			//CreateMap<CreateRoleCommand, IdentityRole>().ReverseMap();
 
-			CreateMap<CreateRoleRequest, AppRole>().ReverseMap();
+			CreateMap<CreateRoleCommand, AppRole>().ReverseMap();
             
             
         }

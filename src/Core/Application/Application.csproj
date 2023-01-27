@@ -33,6 +33,7 @@
     <None Remove="Features\AppFeatures\RoleFeatures\Queries\GetAllRoles\" />
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\UpdateRole\" />
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
+    <None Remove="Messaging\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -63,6 +64,7 @@
     <Folder Include="Features\AppFeatures\RoleFeatures\Queries\GetAllRoles\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\UpdateRole\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
+    <Folder Include="Messaging\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

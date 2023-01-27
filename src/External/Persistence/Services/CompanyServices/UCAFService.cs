@@ -26,7 +26,7 @@ namespace Persistence.Services.CompanyServices
             _mapper = mapper;
         }
 
-        public async Task CreateUCAFAsync(CreateUCAFRequest request)
+        public async Task CreateUCAFAsync(CreateUCAFCommand request)
         {
             _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(request.CompanyId);
             _commandRepository.SetDbContextInst(_companyDbContext);
