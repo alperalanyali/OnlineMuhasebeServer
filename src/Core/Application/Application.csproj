@@ -34,9 +34,12 @@
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\UpdateRole\" />
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
     <None Remove="Messaging\" />
+    <None Remove="Behavior\" />
+    <None Remove="FluentValidation" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -65,6 +68,7 @@
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\UpdateRole\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
     <Folder Include="Messaging\" />
+    <Folder Include="Behavior\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

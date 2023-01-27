@@ -30,15 +30,15 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> GetRoles()
         {
-            GelAllRolesRequest request = new GelAllRolesRequest();
-            GetAllRequestResponse response = await _mediatR.Send(request);
+            GelAllRolesCommand request = new GelAllRolesCommand();
+            GetAllRequestCommandResponse response = await _mediatR.Send(request);
 
             return Ok(response);
         }
         [HttpPut("[action]")]
-        public async Task<IActionResult> UpdateRole(UpdateRoleRequest request)
+        public async Task<IActionResult> UpdateRole(UpdateRoleCommand request)
         {
-            UpdateRoleResponse response = await _mediatR.Send(request);
+            UpdateRoleCommandResponse response = await _mediatR.Send(request);
 
             return Ok(response);
         }

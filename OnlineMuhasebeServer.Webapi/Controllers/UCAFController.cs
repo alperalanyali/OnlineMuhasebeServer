@@ -18,9 +18,9 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> CreateUCAF(CreateUCAFRequest request)
+        public async Task<IActionResult> CreateUCAF(CreateUCAFCommand request)
         {
-            CreateUCAFResponse response = await _mediatR.Send(request);
+            CreateUCAFCommandResponse response = await _mediatR.Send(request);
             return Ok(response);
         }
 

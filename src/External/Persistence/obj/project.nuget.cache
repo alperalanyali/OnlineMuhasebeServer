@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Fr6zT0T8xsewhX8mPUzUCS0TC6hCDgtfOVnk4l7cuSLhnzhnMOjCkCJ6AvfTyqH7Hwe+SRCjqUgegJ6wg6iRAQ==",
+  "dgSpecHash": "g8TYzE31xNoo+kfnFZLqPBx8BUb5UGHl9Nsmz7H+i5izYWWrKfSOwIGMEN6j6kixGfeS5H7mmfv+X14VgMqf6Q==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",

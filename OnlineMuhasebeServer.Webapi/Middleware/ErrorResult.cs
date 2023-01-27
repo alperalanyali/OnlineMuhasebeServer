@@ -9,20 +9,22 @@ namespace OnlineMuhasebeServer.Webapi.Middleware
 		public string ErrorMessage { get; set; }
 		public string TechnicalMessage { get; set; }
 
-		public override string ToString()
-        {
-			return JsonConvert.SerializeObject(this);
-        }
+	
     }
 
 	public class ErrorStatusCode
 	{
 		public int StatusCode { get; set; }
-	}
+        public override string ToString()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+    }
 
 	public class ValidationErrorDetail:ErrorStatusCode
 	{
 		public IEnumerable<string> Errors { get; set; }
-	}
+   
+    }
 }
 

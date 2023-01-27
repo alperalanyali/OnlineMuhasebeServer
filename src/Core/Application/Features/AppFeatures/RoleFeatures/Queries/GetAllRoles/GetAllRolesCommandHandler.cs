@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using Application.Messaging;
 using Application.Services.AppServices;
 using Domain.AppEntities.Identity;
@@ -20,9 +21,9 @@ namespace Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles
         {
 
             IList<AppRole> roles = await _roleService.GetAllRolesAsync();
-            var response = new GetAllRequestCommandResponse() { results = roles.Count,Roles = roles};
+            //var response = new GetAllRequestCommandResponse();
 
-            return response;
+            return new ( roles.Count, roles);
 
         }
     }

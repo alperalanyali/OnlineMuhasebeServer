@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2y3ENU3HTcgtPHzTFHiL0gEQIy5G3XUyjR4tguFWaLJcFfHfP9tQF/sEQXoWMNDQoOezqkTWAtYd444Z2RMtTg==",
+  "dgSpecHash": "JLr42fxY5nAOhEjQuv/7fKG0Deh6M+zYxdZ9FRBd9zWCjxMsq90wiuAon50VYVsKChwlT4cNW4FnIxKl29/PuQ==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Application.csproj",
   "expectedPackageFiles": [
+    "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.2/microsoft.aspnetcore.cryptography.internal.7.0.2.nupkg.sha512",
