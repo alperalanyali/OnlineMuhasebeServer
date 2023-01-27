@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
+using OnlineMuhasebeServer.Webapi.Middleware;
 
 namespace OnlineMuhasebeServer.Webapi.Configurations
 {
@@ -8,7 +9,7 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
     {
         public void Install(IServiceCollection services, IConfiguration configuration)
         {
-
+            services.AddScoped<ExceptionMiddleware>();
             services.AddControllers();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

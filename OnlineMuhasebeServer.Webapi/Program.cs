@@ -3,7 +3,7 @@
 using Domain.AppEntities.Identity;
 using Microsoft.AspNetCore.Identity;
 using OnlineMuhasebeServer.Webapi.Configurations;
-
+using OnlineMuhasebeServer.Webapi.Middleware;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.InstallServices(builder.Configuration,typeof(IServiceInstaller).Assembly);
@@ -16,8 +16,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseAuthentication();
 app.UseAuthorization();
+
+
+app.UseExceptionMiddleware();
 
 app.MapControllers();
 

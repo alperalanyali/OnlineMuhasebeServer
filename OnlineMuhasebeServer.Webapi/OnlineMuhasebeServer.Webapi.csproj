@@ -17,6 +17,9 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,12 +34,17 @@
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Configurations\" />
     <None Remove="OptionsSetup\" />
+    <None Remove="Middleware\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Abstraction\" />
     <Folder Include="Configurations\" />
     <Folder Include="OptionsSetup\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\External\Persistence\Persistence.csproj">

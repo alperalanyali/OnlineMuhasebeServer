@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineMuhasebeServer.Webapi/Program.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Services/AppServices/RoleServices.cs">
     <Files>
-      <File FileName="OnlineMuhasebeServer.Webapi/Program.cs" Line="29" Column="8" />
+      <File FileName="src/Core/Application/Features/AppFeatures/RoleFeatures/Commands/UpdateRole/UpdateRoleHandler.cs" Line="35" Column="42" />
+      <File FileName="src/Core/Application/Features/AppFeatures/RoleFeatures/Queries/GetAllRoles/GetAllRolesHandler.cs" Line="21" Column="60" />
+      <File FileName="src/Core/Application/Services/AppServices/IRoleService.cs" Line="11" Column="13" />
+      <File FileName="src/External/Persistence/Services/AppServices/RoleServices.cs" Line="40" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,27 +16,33 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
-                  <Node name="Abstractions" expanded="True" />
                   <Node name="Features" expanded="True">
                     <Node name="AppFeatures" expanded="True">
-                      <Node name="AppUserFeatures" expanded="True">
-                        <Node name="Commands" expanded="True" />
-                        <Node name="Login" expanded="True">
-                          <Node name="LoginHandler.cs" selected="True" />
+                      <Node name="RoleFeatures" expanded="True">
+                        <Node name="Commands" expanded="True">
+                          <Node name="CreateRole" expanded="True" />
+                          <Node name="UpdateRole" expanded="True" />
+                        </Node>
+                        <Node name="Queries" expanded="True">
+                          <Node name="GetAllRoles" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
                   </Node>
-                </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="AppEntities" expanded="True">
-                    <Node name="Identity" expanded="True" />
+                  <Node name="Services" expanded="True">
+                    <Node name="AppServices" expanded="True" />
                   </Node>
                 </Node>
+                <Node name="Domain" expanded="True" />
               </Node>
               <Node name="External" expanded="True">
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Authentication" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Mapping" expanded="True" />
+                  <Node name="Services" expanded="True">
+                    <Node name="AppServices" expanded="True">
+                      <Node name="RoleServices.cs" selected="True" />
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -50,4 +55,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
