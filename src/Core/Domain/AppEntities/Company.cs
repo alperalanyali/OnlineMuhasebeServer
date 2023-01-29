@@ -15,6 +15,11 @@ namespace Domain.AppEntities
         public string DatabaseName { get; set; }
         public string ServerUserId { get; set; }
         public string ServerPassword { get; set; }
+
+        public void ShouldBeNull()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

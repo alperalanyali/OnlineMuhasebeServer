@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "src\External
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMuhasebeServer.Webapi", "OnlineMuhasebeServer.Webapi\OnlineMuhasebeServer.Webapi.csproj", "{20AF2863-D283-48B1-BE2B-831F3E7F9552}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{1F39210B-C33E-483C-9507-D344693B7A2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlingeMuhasebe.Test", "OnlingeMuhasebe.Test\OnlingeMuhasebe.Test.csproj", "{7D618A29-A023-4904-A8A6-299948B02860}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{20AF2863-D283-48B1-BE2B-831F3E7F9552}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20AF2863-D283-48B1-BE2B-831F3E7F9552}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20AF2863-D283-48B1-BE2B-831F3E7F9552}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D618A29-A023-4904-A8A6-299948B02860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D618A29-A023-4904-A8A6-299948B02860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D618A29-A023-4904-A8A6-299948B02860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D618A29-A023-4904-A8A6-299948B02860}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,5 +67,6 @@ Global
 		{3FFAA08C-D434-4E3A-81C0-BC304EA8634C} = {2E91A3FA-4E29-4856-B92F-3E8CF908360A}
 		{CE7D8D95-833D-4397-A6A5-A2E9E5A59A63} = {9C64D150-06D4-45D8-84EE-23CEF14360AE}
 		{29FCA404-E989-4B17-8BEF-17C71EF04CE7} = {9C64D150-06D4-45D8-84EE-23CEF14360AE}
+		{7D618A29-A023-4904-A8A6-299948B02860} = {1F39210B-C33E-483C-9507-D344693B7A2E}
 	EndGlobalSection
 EndGlobal

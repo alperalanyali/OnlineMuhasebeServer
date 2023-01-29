@@ -25,7 +25,6 @@
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
     <None Remove="Abstractions\" />
     <None Remove="Features\AppFeatures\AppUserFeatures\" />
-    <None Remove="Features\AppFeatures\AppUserFeatures\Login\" />
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\" />
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
     <None Remove="Features\AppFeatures\RoleFeatures\" />
@@ -36,6 +35,7 @@
     <None Remove="Messaging\" />
     <None Remove="Behavior\" />
     <None Remove="FluentValidation" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -59,7 +59,6 @@
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\CreateUCAF\" />
     <Folder Include="Abstractions\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\" />
-    <Folder Include="Features\AppFeatures\AppUserFeatures\Login\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\CreateUser\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\" />
@@ -69,6 +68,7 @@
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
     <Folder Include="Messaging\" />
     <Folder Include="Behavior\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.UnitTest.OnlingeMuhasebe.Test FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="OnlineMuhasebeServer.Webapi/Middleware/ErrorResult.cs">
     <Files>
       <File FileName="OnlineMuhasebeServer.Webapi/Configurations/ApplicationServiceInstaller.cs" Line="17" Column="47" />
@@ -64,7 +64,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
