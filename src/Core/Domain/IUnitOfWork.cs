@@ -6,7 +6,7 @@ namespace Domain
 	public interface IUnitOfWork
 	{
         void SetDbContextInst(DbContext context);
-        Task<int> SaveChangesAsync();
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
 

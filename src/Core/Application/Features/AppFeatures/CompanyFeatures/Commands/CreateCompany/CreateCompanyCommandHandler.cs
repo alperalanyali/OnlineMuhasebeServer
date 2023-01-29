@@ -22,7 +22,7 @@ namespace Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompan
             {
                 throw new Exception("Bu şirket adı daha önce kullanılmıştır!");
             }
-            await _companyService.CreateCompany(request);
+            await _companyService.CreateCompany(request, cancellationToken);
             return new();
         }
     }

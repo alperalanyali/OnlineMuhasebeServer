@@ -5,7 +5,7 @@ namespace Application.Services.CompanyServices
 {
 	public interface IUCAFService
 	{
-		Task CreateUCAFAsync(CreateUCAFCommand request);
+		Task CreateUCAFAsync(CreateUCAFCommand request, CancellationToken cancellationToken);
 	}
 }
 

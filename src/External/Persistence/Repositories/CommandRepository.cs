@@ -3,6 +3,7 @@ using Domain.Repository;
 using Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Context;
+using System.Threading;
 
 namespace Persistence.Repositories
 {
@@ -23,14 +24,14 @@ namespace Persistence.Repositories
             _dbContext = (CompanyDbContext)context;
             Entity = _dbContext.Set<T>();
         }
-        public async Task AddAsync(T entity)
+        public async Task AddAsync(T entity, CancellationToken cancellationToken)
         {
-            await Entity.AddAsync(entity);
+            await Entity.AddAsync(entity, cancellationToken);
         }
 
-        public async Task AddRangeAsnyc(IEnumerable<T> entities)
+        public async Task AddRangeAsnyc(IEnumerable<T> entities, CancellationToken cancellationToken)
         {
-            await Entity.AddRangeAsync(entities);
+            await Entity.AddRangeAsync(entities, cancellationToken);
         }
 
        
@@ -60,6 +61,8 @@ namespace Persistence.Repositories
         {
             Entity.UpdateRange(entities);
         }
+
+       
     }
 }
 

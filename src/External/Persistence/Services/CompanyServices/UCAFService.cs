@@ -26,7 +26,7 @@ namespace Persistence.Services.CompanyServices
             _mapper = mapper;
         }
 
-        public async Task CreateUCAFAsync(CreateUCAFCommand request)
+        public async Task CreateUCAFAsync(CreateUCAFCommand request, CancellationToken cancellationToken)
         {
             _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(request.CompanyId);
             _commandRepository.SetDbContextInst(_companyDbContext);
@@ -35,9 +35,9 @@ namespace Persistence.Services.CompanyServices
             UCAF ucaf = _mapper.Map<UCAF>(request);
             ucaf.Id = Guid.NewGuid().ToString();
 
-            await _commandRepository.AddAsync(ucaf);
+            await _commandRepository.AddAsync(ucaf, cancellationToken);
 
-            await _unitOfWork.SaveChangesAsync();
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

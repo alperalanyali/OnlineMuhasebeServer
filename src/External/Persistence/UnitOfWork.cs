@@ -13,9 +13,9 @@ namespace Persistence
             _context = (CompanyDbContext)context;
         }
 
-        public async Task<int> SaveChangesAsync()
+        public async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
-            int count =  await _context.SaveChangesAsync();
+            int count =  await _context.SaveChangesAsync(cancellationToken);
             return count;
         }
     }
