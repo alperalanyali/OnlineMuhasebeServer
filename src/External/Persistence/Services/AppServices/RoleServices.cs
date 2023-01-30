@@ -28,6 +28,14 @@ namespace Persistence.Services.AppServices
 
         }
 
+        public async Task AddRangeAsync(IEnumerable<AppRole> roles)
+        {
+            foreach (var role in roles)
+            {
+                await _roleManager.CreateAsync(role);
+            }
+        }
+
         public async Task DeleteByIdAsync(string id)
         {
             AppRole role = await GetById(id);
@@ -54,9 +62,9 @@ namespace Persistence.Services.AppServices
 
         }
 
-        public async Task UpdateAsync(AppRole role)
-        {            
-            await _roleManager.UpdateAsync(role);
+        public Task UpdateAsync(AppRole role)
+        {
+            throw new NotImplementedException();
         }
     }
 }

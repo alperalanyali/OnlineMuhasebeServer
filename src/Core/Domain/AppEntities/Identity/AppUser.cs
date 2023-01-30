@@ -8,7 +8,7 @@ namespace Domain.AppEntities.Identity
 		public string FullName { get; set; }
 		public string RefreshToken { get; set; }
 		public DateTime RefreshTokenExpires { get; set; }
-
-	}
+        public ICollection<MainRoleUser> MainRoleUsers { get; set; }
+    }
 }
 

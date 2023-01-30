@@ -124,6 +124,10 @@ namespace Persistence.Migrations
                     b.Property<string>("NormalizedName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
@@ -192,6 +196,96 @@ namespace Persistence.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Domain.AppEntities.MainRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CompanyId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsRoleCreatedByAdmin")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("MainRole");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRoleRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MainRoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MainRoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("MainRoleRole");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRoleUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CompanyId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MainRoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyId");
+
+                    b.HasIndex("MainRoleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("MainRoleUser");
+                });
+
             modelBuilder.Entity("Domain.AppEntities.AppUserCompany", b =>
                 {
                     b.HasOne("Domain.AppEntities.Identity.AppUser", "AppUser")
@@ -209,6 +303,69 @@ namespace Persistence.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRole", b =>
+                {
+                    b.HasOne("Domain.AppEntities.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRoleRole", b =>
+                {
+                    b.HasOne("Domain.AppEntities.MainRole", "MainRole")
+                        .WithMany()
+                        .HasForeignKey("MainRoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.AppEntities.Identity.AppRole", "AppRole")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppRole");
+
+                    b.Navigation("MainRole");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRoleUser", b =>
+                {
+                    b.HasOne("Domain.AppEntities.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.AppEntities.MainRole", null)
+                        .WithMany("MainRoleUsers")
+                        .HasForeignKey("MainRoleId");
+
+                    b.HasOne("Domain.AppEntities.Identity.AppUser", "AppUser")
+                        .WithMany("MainRoleUsers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.Identity.AppUser", b =>
+                {
+                    b.Navigation("MainRoleUsers");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.MainRole", b =>
+                {
+                    b.Navigation("MainRoleUsers");
                 });
 #pragma warning restore 612, 618
         }

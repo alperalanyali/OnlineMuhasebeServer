@@ -36,6 +36,8 @@
     <None Remove="Behavior\" />
     <None Remove="FluentValidation" />
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
+    <None Remove="Roles\" />
+    <None Remove="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -69,6 +71,8 @@
     <Folder Include="Messaging\" />
     <Folder Include="Behavior\" />
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
+    <Folder Include="Roles\" />
+    <Folder Include="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppFeatures.AppUserFeatures.RoleFeatures.Commands.CreateRole;
+using Application.Features.AppFeatures.RoleFeatures.Commands.CreateAllRoles;
 using Application.Features.AppFeatures.RoleFeatures.Commands.DeleteRole;
 using Application.Features.AppFeatures.RoleFeatures.Commands.UpdateRole;
 using Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles;
@@ -48,6 +49,16 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
             var response = await _mediatR.Send(request);
 
             return Ok(response);
+        }
+
+        [HttpGet("[action]")]
+        public async Task<IActionResult> CreateAllRoles()
+        {
+            CreateAllRolesCommand request = new CreateAllRolesCommand();
+            CreateAllRolesResponse response = await _mediatR.Send(request);
+
+            return Ok(response);
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using Domain.Abstractions;
 using Domain.AppEntities;
 using Domain.AppEntities.Identity;
@@ -17,7 +18,13 @@ namespace Persistence.Context
 
         }
 
-		public AppDbContext(DbContextOptions options) :base(options)
+        public DbSet<Company> Company { get; set; }
+		public DbSet<AppUserCompany> UserCompany { get; set; }
+        public DbSet<MainRole> MainRole { get; set; }
+        public DbSet<MainRoleRole> MainRoleRole { get; set; }
+        public DbSet<MainRoleUser> MainRoleUser { get; set; }
+
+        public AppDbContext(DbContextOptions options) :base(options)
 		{
 
 		}
@@ -37,10 +44,9 @@ namespace Persistence.Context
             builder.Ignore<IdentityUserClaim<string>>();
             builder.Ignore<IdentityUserToken<string>>();
             builder.Ignore<IdentityRoleClaim<string>>();
-        }
 
-        public DbSet<Company> Company { get; set; }
-		public DbSet<AppUserCompany> UserCompany { get; set; }
+
+        }
 
         public override ValueTask<EntityEntry> AddAsync(object entity, CancellationToken cancellationToken = default)
         {

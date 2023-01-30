@@ -2,13 +2,12 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.UnitTest.OnlingeMuhasebe.Test FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineMuhasebeServer.Webapi/Middleware/ErrorResult.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Context/AppDbContext.cs">
     <Files>
-      <File FileName="OnlineMuhasebeServer.Webapi/Configurations/ApplicationServiceInstaller.cs" Line="17" Column="47" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ExceptionMiddlewareExtensions.cs" Line="1" Column="1" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ExceptionMiddleware.cs" Line="1" Column="1" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ErrorResult.cs" Line="27" Column="4" />
+      <File FileName="src/External/Persistence/Context/AppDbContext.cs" Line="49" Column="47" IsPinned="True" />
+      <File FileName="src/Core/Domain/AppEntities/MainRoleUser.cs" Line="16" Column="27" />
+      <File FileName="src/Core/Domain/AppEntities/MainRole.cs" Line="15" Column="49" />
+      <File FileName="src/Core/Domain/AppEntities/Identity/AppUser.cs" Line="11" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,53 +16,40 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
-                  <Node name="Dependencies" expanded="True" />
-                  <Node name="Behavior" expanded="True" />
-                  <Node name="Features" expanded="True">
-                    <Node name="AppFeatures" expanded="True">
-                      <Node name="AppUserFeatures" expanded="True">
-                        <Node name="Login" expanded="True" />
-                      </Node>
-                      <Node name="RoleFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="UpdateRole" expanded="True" />
-                        </Node>
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetAllRoles" expanded="True" />
-                        </Node>
-                      </Node>
-                    </Node>
-                    <Node name="CompanyFeatures" expanded="True">
-                      <Node name="UCAFFeatures" expanded="True" />
-                    </Node>
-                  </Node>
-                  <Node name="Services" expanded="True">
-                    <Node name="AppServices" expanded="True" />
-                    <Node name="CompanyServices" expanded="True" />
+                  <Node name="Roles" expanded="True" />
+                </Node>
+                <Node name="Domain" expanded="True">
+                  <Node name="AppEntities" expanded="True">
+                    <Node name="Identity" expanded="True" />
                   </Node>
                 </Node>
               </Node>
               <Node name="External" expanded="True">
                 <Node name="Persistence" expanded="True">
-                  <Node name="Mapping" expanded="True" />
-                  <Node name="Services" expanded="True">
-                    <Node name="AppServices" expanded="True" />
-                    <Node name="CompanyServices" expanded="True" />
-                  </Node>
+                  <Node name="Context" expanded="True" />
+                  <Node name="Migrations" expanded="True" />
                 </Node>
               </Node>
             </Node>
             <Node name="OnlineMuhasebeServer.Webapi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Middleware" expanded="True">
-                <Node name="ErrorResult.cs" selected="True" />
-              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="OnlineMuhasebeServer" expanded="True">
+            <Node name="UnitTest" expanded="True">
+              <Node name="OnlingeMuhasebe.Test" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
