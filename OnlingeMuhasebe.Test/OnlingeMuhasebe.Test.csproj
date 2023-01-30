@@ -34,6 +34,7 @@
     <None Remove="Features\AppFeatures\CompanyFeatures\" />
     <None Remove="Features\AppFeatures\CompanyFeatures\Commands\" />
     <None Remove="Features\AppFeatures\CompanyFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\MainRoleFeatures\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -44,6 +45,7 @@
     <Folder Include="Features\AppFeatures\CompanyFeatures\" />
     <Folder Include="Features\AppFeatures\CompanyFeatures\Commands\" />
     <Folder Include="Features\AppFeatures\CompanyFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\MainRoleFeatures\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\src\Core\Domain\Domain.csproj" />

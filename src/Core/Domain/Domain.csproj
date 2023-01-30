@@ -23,6 +23,7 @@
     <None Remove="Repository\CompanyDbContext\UCAFRepositories\" />
     <None Remove="Repository\AppDbContext\CompanyRepositories\" />
     <None Remove="UnitOfWork\" />
+    <None Remove="Repository\AppDbContext\MainRoleRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
@@ -38,6 +39,7 @@
     <Folder Include="Repository\CompanyDbContext\UCAFRepositories\" />
     <Folder Include="Repository\AppDbContext\CompanyRepositories\" />
     <Folder Include="UnitOfWork\" />
+    <Folder Include="Repository\AppDbContext\MainRoleRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />

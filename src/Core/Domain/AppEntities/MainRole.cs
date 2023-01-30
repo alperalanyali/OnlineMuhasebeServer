@@ -5,7 +5,20 @@ using Domain.Abstractions;
 namespace Domain.AppEntities
 {
 	public class MainRole:Entity
-	{	
+	{
+
+		public MainRole()
+		{
+
+		}
+
+		public MainRole(string title,string companyId = null,bool isRoleCreatedByAdmin = false)
+		{
+			Id = Guid.NewGuid().ToString();
+			Title = title;
+			CompanyId = companyId;
+			IsRoleCreatedByAdmin = isRoleCreatedByAdmin;
+		}
 		public string Title { get; set; }
 
 		[ForeignKey("Company")]

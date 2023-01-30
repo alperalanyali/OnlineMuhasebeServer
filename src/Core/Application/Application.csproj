@@ -38,6 +38,11 @@
     <None Remove="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
     <None Remove="Roles\" />
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
+    <None Remove="Features\AppFeatures\MainRole\" />
+    <None Remove="Features\AppFeatures\MainRole\Commands\" />
+    <None Remove="Features\AppFeatures\MainRole\Queries\" />
+    <None Remove="Features\AppFeatures\MainRole\Commands\CreateMainRole\" />
+    <None Remove="Features\AppFeatures\MainRole\Commands\CreateStaticMainRoles\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -73,6 +78,11 @@
     <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
     <Folder Include="Roles\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
+    <Folder Include="Features\AppFeatures\MainRole\" />
+    <Folder Include="Features\AppFeatures\MainRole\Commands\" />
+    <Folder Include="Features\AppFeatures\MainRole\Queries\" />
+    <Folder Include="Features\AppFeatures\MainRole\Commands\CreateMainRole\" />
+    <Folder Include="Features\AppFeatures\MainRole\Commands\CreateStaticMainRoles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

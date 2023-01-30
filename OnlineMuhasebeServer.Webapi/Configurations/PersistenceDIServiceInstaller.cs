@@ -3,10 +3,12 @@ using Application.Services.AppServices;
 using Application.Services.CompanyServices;
 using Domain;
 using Domain.Repository.AppDbContext.CompanyRepositories;
+using Domain.Repository.AppDbContext.MainRoleRepository;
 using Domain.Repository.CompanyDbContext.UCAFRepositories;
 using Domain.UnitOfWork;
 using Persistence;
 using Persistence.Repositories.AppDbContext.CompanyRepositories;
+using Persistence.Repositories.AppDbContext.MainRoleRepository;
 using Persistence.Repositories.CompanyDbContext.UCAFRepositories;
 using Persistence.Services.AppServices;
 using Persistence.Services.CompanyServices;
@@ -26,6 +28,7 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             #region AppDbContext
             services.AddScoped<ICompanyService, CompanyService>();
             services.AddScoped<IRoleService, RoleServices>();
+            services.AddScoped<IMainRoleService, MainRoleService>();
             #endregion
             #region CompanDbContext
             services.AddScoped<IUCAFService, UCAFService>();
@@ -37,6 +40,8 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             #region AppDbContext
             services.AddScoped<ICompanyCommandRepository, CompanyCommandRepository>();
             services.AddScoped<ICompanyQueryRepository, CompanyQueryRepository>();
+            services.AddScoped<IMainRoleCommandRepository, MainRoleCommandRepository>();
+            services.AddScoped<IMainRoleQueryRepository, MainRoleQueryRepository>();
             #endregion
 
             #region CompanyDbContext

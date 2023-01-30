@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.AppEntities;
 using Domain.AppEntities.Identity;
 
 namespace Application.Roles
@@ -38,6 +39,33 @@ namespace Application.Roles
             #endregion
             return roles;
 		}
+
+
+        public static List<MainRole> GetStaticMainRole()
+        {
+            List<MainRole> mainRoles = new List<MainRole>
+            {
+                new MainRole(
+                    "Admin",
+                    null,
+                    true                      
+                    ),
+                   new MainRole(
+                    "Yonetici",
+                    null,
+                    true
+                    ),
+                      new MainRole(
+                    "Kullanıcı",
+                    null,
+                    true
+                    ),
+
+            };
+
+            return mainRoles;
+
+        }
         #region Role Title Name
         public static string UCAF = "Hesap Planı";
 
