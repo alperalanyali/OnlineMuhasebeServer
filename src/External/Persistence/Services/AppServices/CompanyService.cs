@@ -3,19 +3,27 @@ using Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany;
 using Application.Services.AppServices;
 using AutoMapper;
 using Domain.AppEntities;
+using Domain.Repository.AppDbContext.CompanyRepositories;
+using Domain.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Context;
+using Persistence.Repositories.AppDbContext.CompanyRepositories;
 
 namespace Persistence.Services.AppServices
 {
     public class CompanyService : ICompanyService
     {
 
-        private readonly AppDbContext _dbContext;
+        //private readonly AppDbContext _dbContext;
+        private readonly ICompanyCommandRepository _companyCommandRepository;
+        private readonly ICompanyQueryRepository _companyQueryRepository;
+        private readonly IAppUnitOfWork _appUnitOfWork;
         private readonly IMapper _mapper;
-        public CompanyService(AppDbContext dbContext,IMapper mapper)
+        public CompanyService(ICompanyCommandRepository companyCommandRepository, ICompanyQueryRepository companyQueryRepository, IAppUnitOfWork unitOfWork,IMapper mapper)
         {
-            _dbContext = dbContext;
+            _companyCommandRepository = companyCommandRepository;
+            _companyQueryRepository = companyQueryRepository;
+            _appUnitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
@@ -23,20 +31,20 @@ namespace Persistence.Services.AppServices
         {
             Company company = _mapper.Map<Company>(request);
             company.Id = Guid.NewGuid().ToString();
-            await _dbContext.Set<Company>().AddAsync(company, cancellationToken);
-            await _dbContext.SaveChangesAsync();
+            await _companyCommandRepository.AddAsync(company, cancellationToken);
+            await _appUnitOfWork.SaveChangesAsync(cancellationToken);
         }
 
     
 
         public async Task<Company?> GetCompanyByName(string name)
         {
-            return await _dbContext.Set<Company>().FirstOrDefaultAsync(p => p.Name == name);
+            return await _companyQueryRepository.GetFirstByExpression(p => p.Name == name);
         }
 
         public async Task MigrateCompanyDatabases()
         {
-            var companies = await _dbContext.Set<Company>().ToListAsync();
+            var companies = await _companyQueryRepository.GetAll().ToListAsync();
             foreach (var company in companies)
             {
                 var db = new CompanyDbContext(company);

@@ -23,7 +23,13 @@
     <None Remove="AutoMapper" />
     <None Remove="Mapping\" />
     <None Remove="Repositories\" />
-    <None Remove="Repositories\UCAFRepositories\" />
+    <None Remove="Repositories\GenericRepositories\" />
+    <None Remove="Repositories\GenericRepositories\AppDbContext\" />
+    <None Remove="Repositories\GenericRepositories\CompanyDbContext\" />
+    <None Remove="Repositories\AppDbContext\" />
+    <None Remove="Repositories\CompanyDbContext\" />
+    <None Remove="Repositories\CompanyDbContext\UCAFRepositories\" />
+    <None Remove="Repositories\AppDbContext\CompanyRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
@@ -49,7 +55,13 @@
     <Folder Include="Services\CompanyServices\" />
     <Folder Include="Mapping\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Repositories\UCAFRepositories\" />
+    <Folder Include="Repositories\GenericRepositories\" />
+    <Folder Include="Repositories\GenericRepositories\AppDbContext\" />
+    <Folder Include="Repositories\GenericRepositories\CompanyDbContext\" />
+    <Folder Include="Repositories\AppDbContext\" />
+    <Folder Include="Repositories\CompanyDbContext\" />
+    <Folder Include="Repositories\CompanyDbContext\UCAFRepositories\" />
+    <Folder Include="Repositories\AppDbContext\CompanyRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />

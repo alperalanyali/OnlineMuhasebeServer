@@ -15,7 +15,14 @@
     <None Remove="Abstractions\" />
     <None Remove="CompanyEntities\" />
     <None Remove="Repository\" />
-    <None Remove="Repository\UCAFRepositories\" />
+    <None Remove="Repository\GenericRepositories\" />
+    <None Remove="Repository\GenericRepositories\AppDbContext\" />
+    <None Remove="Repository\GenericRepositories\CompanyDbContext\" />
+    <None Remove="Repository\AppDbContext\" />
+    <None Remove="Repository\CompanyDbContext\" />
+    <None Remove="Repository\CompanyDbContext\UCAFRepositories\" />
+    <None Remove="Repository\AppDbContext\CompanyRepositories\" />
+    <None Remove="UnitOfWork\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
@@ -23,7 +30,14 @@
     <Folder Include="Abstractions\" />
     <Folder Include="CompanyEntities\" />
     <Folder Include="Repository\" />
-    <Folder Include="Repository\UCAFRepositories\" />
+    <Folder Include="Repository\GenericRepositories\" />
+    <Folder Include="Repository\GenericRepositories\AppDbContext\" />
+    <Folder Include="Repository\GenericRepositories\CompanyDbContext\" />
+    <Folder Include="Repository\AppDbContext\" />
+    <Folder Include="Repository\CompanyDbContext\" />
+    <Folder Include="Repository\CompanyDbContext\UCAFRepositories\" />
+    <Folder Include="Repository\AppDbContext\CompanyRepositories\" />
+    <Folder Include="UnitOfWork\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />

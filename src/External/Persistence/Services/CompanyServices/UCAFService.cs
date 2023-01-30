@@ -4,7 +4,8 @@ using Application.Services.CompanyServices;
 using AutoMapper;
 using Domain;
 using Domain.CompanyEntities;
-using Domain.Repository.UCAFRepositories;
+using Domain.Repository.CompanyDbContext.UCAFRepositories;
+using Domain.UnitOfWork;
 using Persistence.Context;
 
 namespace Persistence.Services.CompanyServices
@@ -14,11 +15,11 @@ namespace Persistence.Services.CompanyServices
         private readonly IUCAFCommandRepository _commandRepository;
         private readonly IContextService _contextService;
         private CompanyDbContext _companyDbContext;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly ICompanyDbUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
 
-        public UCAFService(IUCAFCommandRepository commandRepository, IContextService contextService,IUnitOfWork unitOfWork,IMapper mapper)
+        public UCAFService(IUCAFCommandRepository commandRepository, IContextService contextService, ICompanyDbUnitOfWork unitOfWork,IMapper mapper)
         {
             _commandRepository = commandRepository;
             _contextService = contextService;
