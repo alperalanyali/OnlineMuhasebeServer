@@ -18,8 +18,7 @@ namespace Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles
             _roleService = roleService;
         }
         public async Task<GetAllRequestCommandResponse> Handle(GelAllRolesCommand request, CancellationToken cancellationToken)
-        {
-
+        {            
             IList<AppRole> roles = await _roleService.GetAllRolesAsync();
             //var response = new GetAllRequestCommandResponse();
 

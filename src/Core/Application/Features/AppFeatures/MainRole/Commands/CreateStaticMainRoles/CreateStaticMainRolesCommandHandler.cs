@@ -22,7 +22,7 @@ namespace Application.Features.AppFeatures.MainRole.Commands.CreateStaticMainRol
             foreach (var mainRole in mainRoles)
             {
                 Domain.AppEntities.MainRole checkMainRole = await _mainRoleService.GetByTitleAndCompany(mainRole.Title, mainRole.CompanyId);
-                if (checkMainRole != null)
+                if (checkMainRole == null)
                     newRoles.Add(mainRole);
             }
 

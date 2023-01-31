@@ -7,6 +7,19 @@ namespace Domain.AppEntities
 {
 	public class MainRoleRole:Entity
 	{
+		public MainRoleRole()
+		{
+
+		}
+		public MainRoleRole(string mainRoleId,string roleId)
+		{
+			Id = Guid.NewGuid().ToString();
+
+			MainRoleId = mainRoleId;
+			RoleId = roleId;
+		}
+
+
 		[ForeignKey("MainRole")]
 		public string MainRoleId { get; set; }
 

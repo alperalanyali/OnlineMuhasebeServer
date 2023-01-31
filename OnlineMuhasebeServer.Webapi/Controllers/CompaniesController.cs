@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppFeatures.CompanyFeatures.Commands.CreateCompany;
 using Application.Features.AppFeatures.CompanyFeatures.Commands.MigrateCompanyDatabase;
+using Application.Features.AppFeatures.CompanyFeatures.Queries.GetAllCompany;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
@@ -31,7 +32,13 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
             MigrateCompanyDatabaseResponse response = await _mediatR.Send(request);
             return Ok(response);
         }
-
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetAllCompanies()
+        {
+            var request = new GetAllCompanyCommand();
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
     
     }
 }

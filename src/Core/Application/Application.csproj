@@ -43,6 +43,24 @@
     <None Remove="Features\AppFeatures\MainRole\Queries\" />
     <None Remove="Features\AppFeatures\MainRole\Commands\CreateMainRole\" />
     <None Remove="Features\AppFeatures\MainRole\Commands\CreateStaticMainRoles\" />
+    <None Remove="Features\AppFeatures\MainRole\Queries\GetAllMainRole\" />
+    <None Remove="Features\AppFeatures\CompanyFeatures\Queries\GetAllCompany\" />
+    <None Remove="Features\AppFeatures\MainRole\Commands\DeleteMainRole\" />
+    <None Remove="Features\AppFeatures\MainRole\Commands\UpdateMainRole\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Commands\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Queries\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Commands\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Queries\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Commands\CreateMainRoleRole\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Commands\UpdateMainRoleRole\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Commands\DeleteMainRoleRole\" />
+    <None Remove="Features\AppFeatures\MainRoleRole\Queries\GetAllMainRoleRoles\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Commands\CreateMainRoleUser\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Commands\UpdateMainRoleUser\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Commands\DeleteMainRoleUser\" />
+    <None Remove="Features\AppFeatures\MainRoleUser\Queries\GetAllMainRoleUser\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -83,6 +101,25 @@
     <Folder Include="Features\AppFeatures\MainRole\Queries\" />
     <Folder Include="Features\AppFeatures\MainRole\Commands\CreateMainRole\" />
     <Folder Include="Features\AppFeatures\MainRole\Commands\CreateStaticMainRoles\" />
+    <Folder Include="Features\AppFeatures\MainRole\Queries\GetAllMainRole\" />
+    <Folder Include="Features\AppFeatures\CompanyFeatures\Queries\GetAllCompany\" />
+    <Folder Include="Features\AppFeatures\MainRole\Commands\DeleteMainRole\" />
+    <Folder Include="Features\AppFeatures\MainRole\Commands\UpdateMainRole\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Commands\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Queries\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Commands\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Queries\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Commands\CreateMainRoleRole\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Commands\UpdateMainRoleRole\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Commands\DeleteMainRoleRole\" />
+    <Folder Include="Features\AppFeatures\MainRoleRole\Queries\GetAllMainRoleRoles\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Commands\CreateMainRoleUser\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Commands\UpdateMainRoleUser\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Commands\DeleteMainRoleUser\" />
+    <Folder Include="Features\AppFeatures\MainRoleUser\Queries\GetAllMainRoleUser\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

@@ -12,17 +12,24 @@ namespace Domain.AppEntities
 
 		}
 
-		public MainRole(string title,string companyId = null,bool isRoleCreatedByAdmin = false)
+		public MainRole(string title/*,string companyId = ""*/,bool isRoleCreatedByAdmin = false)
 		{
 			Id = Guid.NewGuid().ToString();
 			Title = title;
-			CompanyId = companyId;
+			//CompanyId = companyId;
 			IsRoleCreatedByAdmin = isRoleCreatedByAdmin;
 		}
-		public string Title { get; set; }
+        public MainRole(string title,string companyId = "", bool isRoleCreatedByAdmin = false)
+        {
+            Id = Guid.NewGuid().ToString();
+            Title = title;
+            CompanyId = companyId;
+			IsRoleCreatedByAdmin = isRoleCreatedByAdmin;
+        }
+        public string Title { get; set; }
 
 		[ForeignKey("Company")]
-		public string CompanyId { get; set; }
+		public string? CompanyId { get; set; }
 		public Company? Company { get; set; }
 
 		public bool IsRoleCreatedByAdmin { get; set; }

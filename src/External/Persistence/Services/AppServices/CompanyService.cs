@@ -35,7 +35,11 @@ namespace Persistence.Services.AppServices
             await _appUnitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-    
+        public async Task<IList<Company>> GetAlCompanies()
+        {
+            var result = await _companyQueryRepository.GetAll().ToListAsync();
+            return result;
+        }
 
         public async Task<Company?> GetCompanyByName(string name)
         {

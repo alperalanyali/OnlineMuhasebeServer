@@ -23,9 +23,8 @@ namespace Application.Features.AppFeatures.MainRole.Commands.CreateMainRole
                 throw new Exception("Bu rol daha önce eklenmiştir!!");
             }
             Domain.AppEntities.MainRole mainRole = new(
-                request.Title,
-                request.CompanyId,
-                request.IsRoleCreatedByAdmin
+                request.Title,                
+                request.CompanyId != null ? false : true
                 );
             await _mainRoleService.CreateAsync(mainRole,cancellationToken);
 

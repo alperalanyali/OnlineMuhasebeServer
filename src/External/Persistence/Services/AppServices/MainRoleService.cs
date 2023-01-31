@@ -3,6 +3,7 @@ using Application.Services.AppServices;
 using Domain.AppEntities;
 using Domain.Repository.AppDbContext.MainRoleRepository;
 using Domain.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Services.AppServices
 {
@@ -21,12 +22,12 @@ namespace Persistence.Services.AppServices
         public async Task CreateAsync(MainRole mainRole,CancellationToken cancellation)
         {
             await _mainRoleCommandTRepository.AddAsync(mainRole, cancellation);
-            _appUnitOfWork.SaveChangesAsync(cancellation);
+            await _appUnitOfWork.SaveChangesAsync(cancellation);
         }
 
-        public Task<IList<MainRole>> GetStaticMainRoleAsync()
+        public async Task<IList<MainRole>> GetMainRoleAsync()
         {
-            throw new NotImplementedException();
+            return await _mainRoleQueryRepository.GetAll().ToListAsync();
         }
 
         public async Task<MainRole> GetByTitleAndCompany(string title, string companyId)
@@ -39,7 +40,24 @@ namespace Persistence.Services.AppServices
         public async Task CreateRangeAsync(List<MainRole> mainRoles,CancellationToken cancellationToken)
         {
             await _mainRoleCommandTRepository.AddRangeAsnyc(mainRoles, cancellationToken);
-            _appUnitOfWork.SaveChangesAsync(cancellationToken);
+            await _appUnitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task DeleteMainRole(string id,CancellationToken cancellationToken)
+        {
+            await _mainRoleCommandTRepository.RemoveById(id);
+            await _appUnitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task<MainRole> GetById(string Id)
+        {
+            return await _mainRoleQueryRepository.GetById(Id, false);
+        }
+
+        public async Task UpdateAsync(MainRole mainRole, CancellationToken cancellationToken)
+        {
+            _mainRoleCommandTRepository.Update(mainRole);
+            await _appUnitOfWork.SaveChangesAsync(cancellationToken);
         }
     }
 }

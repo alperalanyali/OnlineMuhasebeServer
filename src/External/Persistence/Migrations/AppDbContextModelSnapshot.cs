@@ -202,7 +202,6 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CompanyId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -259,13 +258,13 @@ namespace Persistence.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CompanyId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MainRoleId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime?>("UpdatedDate")
@@ -309,9 +308,7 @@ namespace Persistence.Migrations
                 {
                     b.HasOne("Domain.AppEntities.Company", "Company")
                         .WithMany()
-                        .HasForeignKey("CompanyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("CompanyId");
 
                     b.Navigation("Company");
                 });
@@ -339,13 +336,13 @@ namespace Persistence.Migrations
                 {
                     b.HasOne("Domain.AppEntities.Company", "Company")
                         .WithMany()
-                        .HasForeignKey("CompanyId")
+                        .HasForeignKey("CompanyId");
+
+                    b.HasOne("Domain.AppEntities.MainRole", "MainRole")
+                        .WithMany("MainRoleUsers")
+                        .HasForeignKey("MainRoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Domain.AppEntities.MainRole", null)
-                        .WithMany("MainRoleUsers")
-                        .HasForeignKey("MainRoleId");
 
                     b.HasOne("Domain.AppEntities.Identity.AppUser", "AppUser")
                         .WithMany("MainRoleUsers")
@@ -356,6 +353,8 @@ namespace Persistence.Migrations
                     b.Navigation("AppUser");
 
                     b.Navigation("Company");
+
+                    b.Navigation("MainRole");
                 });
 
             modelBuilder.Entity("Domain.AppEntities.Identity.AppUser", b =>

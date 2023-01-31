@@ -47,17 +47,15 @@ namespace Application.Roles
             {
                 new MainRole(
                     "Admin",
-                    null,
+           
                     true                      
                     ),
                    new MainRole(
                     "Yonetici",
-                    null,
                     true
                     ),
                       new MainRole(
-                    "Kullanıcı",
-                    null,
+                    "Kullanıcı",                    
                     true
                     ),
 
