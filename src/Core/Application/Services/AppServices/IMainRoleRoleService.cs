@@ -11,6 +11,7 @@ namespace Application.Services.AppServices
         Task CreateRangeAsync(List<MainRoleRole> mainRoles, CancellationToken cancellationToken);
         Task DeleteMainRoleRole(string id, CancellationToken cancellationToken);
         Task UpdateAsync(MainRoleRole mainRole, CancellationToken cancellationToken);
+        Task<IList<MainRoleRole>> GetMainRoleRoleByMainRoleId(string mainRoleId);
     }
 }
 

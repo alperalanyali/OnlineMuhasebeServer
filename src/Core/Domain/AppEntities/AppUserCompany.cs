@@ -7,6 +7,17 @@ namespace Domain.AppEntities
 {
 	public class AppUserCompany:Entity
 	{
+
+		public AppUserCompany()
+		{
+
+		}
+		public AppUserCompany(string userId,string companyId)
+		{
+			Id = Guid.NewGuid().ToString();
+			AppUserId = userId;
+			CompanyId = companyId;
+		}
 		[ForeignKey("AppUser")]
 		public string AppUserId { get; set; }
 		public AppUser AppUser { get; set; }

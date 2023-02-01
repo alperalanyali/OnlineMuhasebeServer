@@ -1,11 +1,12 @@
 ﻿using System;
 using Domain.AppEntities.Identity;
+using Domain.Dtos;
 
 namespace Application.Abstractions
 {
 	public interface IJwtProvider
 	{
-		Task<string> CreateToken(AppUser user,List<string> roles);
+		Task<TokenRefreshTokenDto> CreateToken(AppUser user);
 	}
 }
 

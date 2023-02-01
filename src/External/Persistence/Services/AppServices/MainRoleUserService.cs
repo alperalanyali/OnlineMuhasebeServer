@@ -48,6 +48,11 @@ namespace Persistence.Services.AppServices
             return await _mainRoleUserQueryRepository.GetAll().ToListAsync();
         }
 
+        public async Task<MainRoleUser> GetRolesByUserIdAndCompany(string userId, string companyId)
+        {
+            return await _mainRoleUserQueryRepository.GetFirstByExpression(p => p.UserId == userId && p.CompanyId == companyId);
+        }
+
         public async Task UpdateAsync(MainRoleUser mainRole, CancellationToken cancellationToken)
         {
             _mainRoleUserCommandRepository.Update(mainRole);

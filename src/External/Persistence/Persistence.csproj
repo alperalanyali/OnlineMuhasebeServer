@@ -33,6 +33,7 @@
     <None Remove="Repositories\AppDbContext\MainRoleRepository\" />
     <None Remove="Repositories\AppDbContext\MainRoleRoleRepositories\" />
     <None Remove="Repositories\AppDbContext\MainRoleUserRepositories\" />
+    <None Remove="Repositories\AppDbContext\UserCompanyRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
@@ -68,6 +69,7 @@
     <Folder Include="Repositories\AppDbContext\MainRoleRepository\" />
     <Folder Include="Repositories\AppDbContext\MainRoleRoleRepositories\" />
     <Folder Include="Repositories\AppDbContext\MainRoleUserRepositories\" />
+    <Folder Include="Repositories\AppDbContext\UserCompanyRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />

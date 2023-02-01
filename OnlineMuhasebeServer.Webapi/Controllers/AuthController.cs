@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppFeatures.AppUserFeatures.Commands.CreateUser;
-using Application.Features.AppFeatures.AppUserFeatures.Login;
+using Application.Features.AppFeatures.AuthFeatures.Quries.GetRolesByUserIdAndCompanyId;
+using Application.Features.AuthFeatures.Commands.Login;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
@@ -27,6 +28,12 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
 
         [HttpPost("[action]")]
         public async Task<IActionResult> CreateUser(CreateUserRequest request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetRolesByUserIdAndCompany(GetRolesByUserIdAndCompanyIdQuery request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);

@@ -6,6 +6,7 @@ using Domain.Repository.AppDbContext.CompanyRepositories;
 using Domain.Repository.AppDbContext.MainRoleRepository;
 using Domain.Repository.AppDbContext.MainRoleRoleRepositories;
 using Domain.Repository.AppDbContext.MainRoleUserRepositories;
+using Domain.Repository.AppDbContext.UserCompanyRepositories;
 using Domain.Repository.CompanyDbContext.UCAFRepositories;
 using Domain.UnitOfWork;
 using Persistence;
@@ -13,6 +14,7 @@ using Persistence.Repositories.AppDbContext.CompanyRepositories;
 using Persistence.Repositories.AppDbContext.MainRoleRepository;
 using Persistence.Repositories.AppDbContext.MainRoleRoleRepositories;
 using Persistence.Repositories.AppDbContext.MainRoleUserRepositories;
+using Persistence.Repositories.AppDbContext.UserCompanyRepositories;
 using Persistence.Repositories.CompanyDbContext.UCAFRepositories;
 using Persistence.Services.AppServices;
 using Persistence.Services.CompanyServices;
@@ -35,6 +37,8 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             services.AddScoped<IMainRoleService, MainRoleService>();
             services.AddScoped<IMainRoleRoleService, MainRoleRoleService>();
             services.AddScoped<IMainRoleUserService, MainRoleUserService>();
+            services.AddScoped<IUserCompanyService, UserCompanyService>();
+            services.AddScoped<IAuthService, AuthService>();
             #endregion
             #region CompanDbContext
             services.AddScoped<IUCAFService, UCAFService>();
@@ -52,6 +56,8 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             services.AddScoped<IMainRoleRoleQueryRepository, MainRoleRoleQueryRepository>();
             services.AddScoped<IMainRoleUserCommandRepository, MainRoleUserCommandRepository>();
             services.AddScoped<IMainRoleUserQueryRepository, MainRoleUserQueryRepository>();
+            services.AddScoped<IUserCompanyCommandRepository, UserCompanyCommandRepository>();
+            services.AddScoped<IUserCompanyQueryRepository, UserCompanyQueryRepository>();
             #endregion
 
             #region CompanyDbContext

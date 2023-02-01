@@ -10,6 +10,7 @@ namespace Application.Services.AppServices
 		Task<IList<Company>> GetAlCompanies();
 		Task<Company?> GetCompanyByName(string name);
 		Task MigrateCompanyDatabases();
+		
 	}
 }
 

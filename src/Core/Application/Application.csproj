@@ -35,7 +35,6 @@
     <None Remove="Messaging\" />
     <None Remove="Behavior\" />
     <None Remove="FluentValidation" />
-    <None Remove="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
     <None Remove="Roles\" />
     <None Remove="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
     <None Remove="Features\AppFeatures\MainRole\" />
@@ -61,6 +60,20 @@
     <None Remove="Features\AppFeatures\MainRoleUser\Commands\UpdateMainRoleUser\" />
     <None Remove="Features\AppFeatures\MainRoleUser\Commands\DeleteMainRoleUser\" />
     <None Remove="Features\AppFeatures\MainRoleUser\Queries\GetAllMainRoleUser\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Commands\UpdateUser\" />
+    <None Remove="Features\AppFeatures\AuthFeatures\" />
+    <None Remove="Features\AppFeatures\AuthFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\AuthFeatures\Commands\Login\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Commands\CreateUserCompany\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Commands\UpdateUserCompany\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Commands\DeleteUserCompany\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Queries\GetAllUserCompany\" />
+    <None Remove="Features\AppFeatures\UserCompanyFeatures\Queries\GetUserCompanyByUserId\" />
+    <None Remove="Features\AppFeatures\AuthFeatures\Quries\" />
+    <None Remove="Features\AppFeatures\AuthFeatures\Quries\GetRolesByUserIdAndCompanyId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -93,7 +106,6 @@
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\DeleteRole\" />
     <Folder Include="Messaging\" />
     <Folder Include="Behavior\" />
-    <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\Login\" />
     <Folder Include="Roles\" />
     <Folder Include="Features\AppFeatures\RoleFeatures\Commands\CreateAllRoles\" />
     <Folder Include="Features\AppFeatures\MainRole\" />
@@ -120,6 +132,20 @@
     <Folder Include="Features\AppFeatures\MainRoleUser\Commands\UpdateMainRoleUser\" />
     <Folder Include="Features\AppFeatures\MainRoleUser\Commands\DeleteMainRoleUser\" />
     <Folder Include="Features\AppFeatures\MainRoleUser\Queries\GetAllMainRoleUser\" />
+    <Folder Include="Features\AppFeatures\AppUserFeatures\Commands\UpdateUser\" />
+    <Folder Include="Features\AppFeatures\AuthFeatures\" />
+    <Folder Include="Features\AppFeatures\AuthFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\AuthFeatures\Commands\Login\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Commands\CreateUserCompany\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Commands\UpdateUserCompany\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Commands\DeleteUserCompany\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Queries\GetAllUserCompany\" />
+    <Folder Include="Features\AppFeatures\UserCompanyFeatures\Queries\GetUserCompanyByUserId\" />
+    <Folder Include="Features\AppFeatures\AuthFeatures\Quries\" />
+    <Folder Include="Features\AppFeatures\AuthFeatures\Quries\GetRolesByUserIdAndCompanyId\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

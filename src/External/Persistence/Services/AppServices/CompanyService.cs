@@ -45,7 +45,7 @@ namespace Persistence.Services.AppServices
         {
             return await _companyQueryRepository.GetFirstByExpression(p => p.Name == name);
         }
-
+ 
         public async Task MigrateCompanyDatabases()
         {
             var companies = await _companyQueryRepository.GetAll().ToListAsync();
