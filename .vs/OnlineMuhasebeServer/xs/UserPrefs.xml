@@ -1,5 +1,21 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" line="26" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Services/AppServices/AuthService.cs">
+    <Files>
+      <File FileName="src/Core/Application/Features/AppFeatures/AuthFeatures/Quries/GetRolesByUserIdAndCompanyId/GetRolesByUserIdAndCompanyIdQueryHandler.cs" Line="18" Column="1" />
+      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/AuthController.cs" Line="35" Column="18" />
+      <File FileName="src/External/Persistence/Services/AppServices/AuthService.cs" Line="48" Column="25" />
+      <File FileName="src/Core/Application/Services/AppServices/IMainRoleRoleService.cs" Line="14" Column="35" />
+      <File FileName="src/External/Persistence/Services/AppServices/MainRoleRoleService.cs" Line="53" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -50,16 +66,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" line="26" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/AppServices/AuthService.cs" relfile="src/External/Persistence/Services/AppServices/AuthService.cs" line="44" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/AuthFeatures/Quries/GetRolesByUserIdAndCompanyId/GetRolesByUserIdAndCompanyIdQueryHandler.cs" relfile="src/Core/Application/Features/AppFeatures/AuthFeatures/Quries/GetRolesByUserIdAndCompanyId/GetRolesByUserIdAndCompanyIdQueryHandler.cs" line="18" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
