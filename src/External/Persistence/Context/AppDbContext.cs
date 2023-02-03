@@ -23,7 +23,8 @@ namespace Persistence.Context
         public DbSet<MainRole> MainRole { get; set; }
         public DbSet<MainRoleRole> MainRoleRole { get; set; }
         public DbSet<MainRoleUser> MainRoleUser { get; set; }
-
+        public DbSet<NavigationItem> NavigationItem { get; set; }
+        public DbSet<NavigationItemMainRole> NavigationItemMainRole { get; set; }
         public AppDbContext(DbContextOptions options) :base(options)
 		{
 

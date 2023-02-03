@@ -74,6 +74,23 @@
     <None Remove="Features\AppFeatures\UserCompanyFeatures\Queries\GetUserCompanyByUserId\" />
     <None Remove="Features\AppFeatures\AuthFeatures\Quries\" />
     <None Remove="Features\AppFeatures\AuthFeatures\Quries\GetRolesByUserIdAndCompanyId\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Commands\CreateNavigationItem\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Commands\UpdateNavigationItem\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Commands\DeleteNavigationItem\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Queries\GetNavigationItems\" />
+    <None Remove="Features\AppFeatures\NavigationItemFeatures\Queries\GetNavigationItemById\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\CreateNavigationItemMainRole\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\UpdateNavigationItemMainRole\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\DeleteNavigationItemMainRole\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoles\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleById\" />
+    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleByMainRoleId\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -146,6 +163,23 @@
     <Folder Include="Features\AppFeatures\UserCompanyFeatures\Queries\GetUserCompanyByUserId\" />
     <Folder Include="Features\AppFeatures\AuthFeatures\Quries\" />
     <Folder Include="Features\AppFeatures\AuthFeatures\Quries\GetRolesByUserIdAndCompanyId\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Commands\CreateNavigationItem\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Commands\UpdateNavigationItem\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Commands\DeleteNavigationItem\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Queries\GetNavigationItems\" />
+    <Folder Include="Features\AppFeatures\NavigationItemFeatures\Queries\GetNavigationItemById\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\CreateNavigationItemMainRole\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\UpdateNavigationItemMainRole\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\DeleteNavigationItemMainRole\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoles\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleById\" />
+    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleByMainRoleId\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

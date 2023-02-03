@@ -39,13 +39,13 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
 
         }
 
-        [HttpPut("[action]")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Update(UpdateMainRoleCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-        [HttpDelete("[action]")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> DeleteById(DeleteMainRoleCommand request)
         {
             var response = await _mediatR.Send(request);

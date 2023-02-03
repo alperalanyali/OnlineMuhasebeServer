@@ -34,19 +34,19 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
             return Ok(response);
 
         }
-        [HttpPut("[action]")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Update(UpdateUserCompanyCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-        [HttpDelete("[action]")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Delete(DeleteUserCompanyCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
-        [HttpGet("[action]")]
+        [HttpPost("[action]")]
         public async Task<IActionResult> GetUserCompanyByUserId(GetUserCompanyByUserIdCommand request)
         {
             var response = await _mediatR.Send(request);

@@ -285,6 +285,62 @@ namespace Persistence.Migrations
                     b.ToTable("MainRoleUser");
                 });
 
+            modelBuilder.Entity("Domain.AppEntities.NavigationItem", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NavigationName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NavigationPath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TopNavigationId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("NavigationItem");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.NavigationItemMainRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MainRoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("NavigationItemId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MainRoleId");
+
+                    b.HasIndex("NavigationItemId");
+
+                    b.ToTable("NavigationItemMainRole");
+                });
+
             modelBuilder.Entity("Domain.AppEntities.AppUserCompany", b =>
                 {
                     b.HasOne("Domain.AppEntities.Identity.AppUser", "AppUser")
@@ -355,6 +411,25 @@ namespace Persistence.Migrations
                     b.Navigation("Company");
 
                     b.Navigation("MainRole");
+                });
+
+            modelBuilder.Entity("Domain.AppEntities.NavigationItemMainRole", b =>
+                {
+                    b.HasOne("Domain.AppEntities.MainRole", "MainRole")
+                        .WithMany()
+                        .HasForeignKey("MainRoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.AppEntities.NavigationItem", "NavigationItem")
+                        .WithMany()
+                        .HasForeignKey("NavigationItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("MainRole");
+
+                    b.Navigation("NavigationItem");
                 });
 
             modelBuilder.Entity("Domain.AppEntities.Identity.AppUser", b =>
