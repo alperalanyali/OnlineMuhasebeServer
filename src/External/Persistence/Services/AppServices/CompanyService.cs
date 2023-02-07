@@ -16,7 +16,7 @@ namespace Persistence.Services.AppServices
 
         //private readonly AppDbContext _dbContext;
         private readonly ICompanyCommandRepository _companyCommandRepository;
-        private readonly ICompanyQueryRepository _companyQueryRepository;
+        private readonly ICompanyQueryRepository _companyQueryRepository;        
         private readonly IAppUnitOfWork _appUnitOfWork;
         private readonly IMapper _mapper;
         public CompanyService(ICompanyCommandRepository companyCommandRepository, ICompanyQueryRepository companyQueryRepository, IAppUnitOfWork unitOfWork,IMapper mapper)

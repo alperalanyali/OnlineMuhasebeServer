@@ -21,7 +21,8 @@ namespace Application.Features.AuthFeatures.Commands.Login
             string UserId,
             string FullName,
             IList<CompanyDto> Companies,
-            CompanyDto Company
+            CompanyDto Company,
+            int Year
         );
 }
 

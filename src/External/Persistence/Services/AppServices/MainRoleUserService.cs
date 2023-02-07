@@ -43,6 +43,11 @@ namespace Persistence.Services.AppServices
             return await _mainRoleUserQueryRepository.GetById(Id);
         }
 
+        public async Task<string> GetMainRoleByUserId(string userId)
+        {
+            return await _mainRoleUserQueryRepository.GetMainRoleUserByUserId(userId);
+        }
+
         public async Task<IList<MainRoleUser>> GetMainRolUsereAsync()
         {
             return await _mainRoleUserQueryRepository.GetAll().ToListAsync();

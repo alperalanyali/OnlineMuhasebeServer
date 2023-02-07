@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" line="54" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OnlineMuhasebeServer.Webapi/Controllers/MainRoleController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs">
     <Files>
-      <File FileName="src/Core/Application/Features/AppFeatures/AuthFeatures/Quries/GetRolesByUserIdAndCompanyId/GetRolesByUserIdAndCompanyIdQueryHandler.cs" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/AuthController.cs" />
-      <File FileName="src/External/Persistence/Services/AppServices/AuthService.cs" />
-      <File FileName="src/External/Persistence/Services/AppServices/MainRoleRoleService.cs" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Program.cs" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Configurations/WebApiServiceInstaller.cs" />
-      <File FileName="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandResponse.cs" />
-      <File FileName="src/Core/Domain/Dtos/TokenRefreshTokenDto.cs" />
-      <File FileName="src/Core/Domain/Dtos/CompanyDto.cs" />
-      <File FileName="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" Line="37" Column="1" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/CompaniesController.cs" Line="1" Column="1" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/MainRoleController.cs" Line="42" Column="18" />
+      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/AuthController.cs" Line="25" Column="1" />
+      <File FileName="src/Core/Application/Features/AppFeatures/AuthFeatures/Commands/Login/LoginCommandHandler.cs" Line="50" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,50 +22,60 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
-                  <Node name="Abstractions" expanded="True" />
+                  <Node name="Behavior" expanded="True" />
                   <Node name="Features" expanded="True">
                     <Node name="AppFeatures" expanded="True">
                       <Node name="AuthFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="Login" expanded="True" />
-                        </Node>
-                        <Node name="Quries" expanded="True">
-                          <Node name="GetRolesByUserIdAndCompanyId" expanded="True" />
-                        </Node>
-                      </Node>
-                      <Node name="UserCompanyFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="CreateUserCompany" expanded="True" />
+                          <Node name="Login" expanded="True">
+                            <Node name="LoginCommandValidator.cs" selected="True" />
+                          </Node>
                         </Node>
                       </Node>
+                      <Node name="MainRoleUser" expanded="True">
+                        <Node name="Queries" expanded="True">
+                          <Node name="GetMainRoleUserByUserId" expanded="True" />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+                <Node name="Domain" expanded="True">
+                  <Node name="Repository" expanded="True">
+                    <Node name="AppDbContext" expanded="True">
+                      <Node name="CompanyRepositories" expanded="True" />
+                      <Node name="MainRoleUserRepositories" expanded="True" />
+                      <Node name="NavigationItemMainRoleRepositories" expanded="True" />
+                    </Node>
+                    <Node name="GenericRepositories" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="External" expanded="True">
+                <Node name="Persistence" expanded="True">
+                  <Node name="Repositories" expanded="True">
+                    <Node name="AppDbContext" expanded="True">
+                      <Node name="MainRoleUserRepositories" expanded="True" />
+                    </Node>
+                    <Node name="GenericRepositories" expanded="True">
+                      <Node name="AppDbContext" expanded="True" />
                     </Node>
                   </Node>
                   <Node name="Services" expanded="True">
                     <Node name="AppServices" expanded="True" />
                   </Node>
                 </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="AppEntities" expanded="True" />
-                  <Node name="Dtos" expanded="True" />
-                </Node>
               </Node>
             </Node>
             <Node name="OnlineMuhasebeServer.Webapi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="MainRoleController.cs" selected="True" />
-              </Node>
+              <Node name="Configurations" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Middleware" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/MainRoleController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/MainRoleController.cs" line="50" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

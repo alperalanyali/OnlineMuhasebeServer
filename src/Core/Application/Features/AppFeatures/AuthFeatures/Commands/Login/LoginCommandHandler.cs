@@ -46,7 +46,8 @@ namespace Application.Features.AuthFeatures.Commands.Login
                 UserId:user.Id,
                 Token:await _jwtProvider.CreateToken(user),                
                 Companies:companyDtos,
-                Company: companyDtos[0]
+                Company: companyDtos[0],
+                Year: DateTime.Now.Year
                 );
             //{
             //    Email = user.Email,

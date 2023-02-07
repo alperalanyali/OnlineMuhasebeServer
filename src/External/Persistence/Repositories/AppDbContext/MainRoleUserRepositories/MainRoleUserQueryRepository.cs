@@ -10,6 +10,11 @@ namespace Persistence.Repositories.AppDbContext.MainRoleUserRepositories
         public MainRoleUserQueryRepository(Context.AppDbContext dbContext) : base(dbContext)
         {
         }
+
+        public Task<string> GetMainRoleUserByUserId(string userId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
