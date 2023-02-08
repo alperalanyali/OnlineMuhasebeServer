@@ -5,7 +5,7 @@ namespace Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Querie
 {
 	public record GetNavigationItemMainRolesQueryResponse(
 		int Results,
-		IList<NavigationItemMainRole> NavigationItemMainRoles
+		IList<NavigationItemMainRole> Data
 		);
 	
 }

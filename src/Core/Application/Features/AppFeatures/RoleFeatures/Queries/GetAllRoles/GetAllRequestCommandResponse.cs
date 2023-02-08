@@ -5,7 +5,7 @@ namespace Application.Features.AppFeatures.RoleFeatures.Queries.GetAllRoles
 {
 	public sealed record GetAllRequestCommandResponse(
 		int results,
-         IList<AppRole> Roles);
+         IList<AppRole> Data);
    
 }
 

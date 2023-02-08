@@ -3,7 +3,7 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Queries.GetNav
 {
 	public record GetNavigationItemsQueryResponse(
 		int results,
-		IList<Domain.AppEntities.NavigationItem> NavigationItems
+		IList<Domain.AppEntities.NavigationItem> Data
 		);
 	
 }

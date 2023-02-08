@@ -5,7 +5,7 @@ namespace Application.Features.AppFeatures.UserCompanyFeatures.Queries.GetAllUse
 {
 	public sealed record GetAllUserCompanyCommandResponse(
 		int results,
-		IList<AppUserCompany> UserCompanies
+		IList<AppUserCompany> Data
 		);
 	
 }

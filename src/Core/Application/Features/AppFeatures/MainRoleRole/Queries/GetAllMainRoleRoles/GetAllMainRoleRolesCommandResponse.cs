@@ -3,7 +3,7 @@ namespace Application.Features.AppFeatures.MainRoleRole.Queries.GetAllMainRoleRo
 {
 	public record GetAllMainRoleRolesCommandResponse(
 		int results,
-		IList<Domain.AppEntities.MainRoleRole> MainRoleRoles
+		IList<Domain.AppEntities.MainRoleRole> Data
 		);
 	
 }

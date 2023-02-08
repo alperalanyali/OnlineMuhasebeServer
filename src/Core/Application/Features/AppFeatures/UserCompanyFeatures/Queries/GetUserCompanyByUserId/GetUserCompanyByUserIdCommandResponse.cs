@@ -5,7 +5,7 @@ namespace Application.Features.AppFeatures.UserCompanyFeatures.Queries.GetUserCo
 {
 	public sealed record GetUserCompanyByUserIdCommandResponse(
 		int results,
-		IList<AppUserCompany> UserCompanies
+		IList<AppUserCompany> Data
 		);
 	
 }
