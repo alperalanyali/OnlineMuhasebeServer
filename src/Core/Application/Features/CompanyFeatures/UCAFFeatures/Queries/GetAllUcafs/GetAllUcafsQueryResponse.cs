@@ -5,7 +5,7 @@ namespace Application.Features.CompanyFeatures.UCAFFeatures.Queries.GetAllUcafs
 {
 	public record GetAllUcafsQueryResponse(
         int results,
-        IList<UCAF> ucafs
+        IList<UCAF> data
 		);
 	
 }

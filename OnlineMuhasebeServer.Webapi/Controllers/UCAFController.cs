@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.CompanyFeatures.UCAFFeatures.Commands.CreateMainUCAF;
 using Application.Features.CompanyFeatures.UCAFFeatures.Commands.CreateUCAF;
+using Application.Features.CompanyFeatures.UCAFFeatures.Commands.DeleteUCAF;
+using Application.Features.CompanyFeatures.UCAFFeatures.Commands.UpdateUCAF;
 using Application.Features.CompanyFeatures.UCAFFeatures.Queries.GetAllUcafs;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -32,13 +34,25 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
             CreateMainUCAFCommandResponse response = await _mediatR.Send(request, cancellationToken);
             return Ok(response);
         }
-        [HttpGet("[action]")]
-        public async Task<IActionResult> GetAllUcafs(string companyId,string codeOrName=null,string type=null)
-        {
-            var request = new GetAllUcafsQuery(companyId,codeOrName,type);
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetAllUcafs(GetAllUcafsQuery request)
+        {           
             var response = await _mediatR.Send(request);
             return Ok(response);
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> DeleteById(DeleteUCAFCommand request,CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request,cancellationToken);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Update(UpdateUCAFCommand request,CancellationToken cancellationToken)
+        {
+            var response = await _mediatR.Send(request,cancellationToken);
+            return Ok(response);
+        }
+
     }
 }
 

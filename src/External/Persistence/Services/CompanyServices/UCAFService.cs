@@ -39,7 +39,7 @@ namespace Persistence.Services.CompanyServices
 
             UCAF ucaf = _mapper.Map<UCAF>(request);
             ucaf.Id = Guid.NewGuid().ToString();
-
+            ucaf.Name = ucaf.Name.ToUpper();
             await _commandRepository.AddAsync(ucaf, cancellationToken);
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
@@ -2232,6 +2232,52 @@ namespace Persistence.Services.CompanyServices
 
             return ucafs;
 
+        }
+
+        public async Task<UCAF> GetById(string companyId,string id)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _queryRepository.SetDbContextInst(_companyDbContext);
+            return await _queryRepository.GetById(id);
+        }
+
+        public async Task Update(UCAF ucaf,string companyId,CancellationToken cancellationToken)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _commandRepository.SetDbContextInst(_companyDbContext);
+            _unitOfWork.SetDbContextInst(_companyDbContext);
+            _commandRepository.Update(ucaf);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+        }
+
+        public async Task DeleteById(string companyId, string id,CancellationToken cancellationToken)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _commandRepository.SetDbContextInst(_companyDbContext);
+            _unitOfWork.SetDbContextInst(_companyDbContext);
+            await _commandRepository.RemoveById(id);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+        }
+
+        public async Task<bool> CheckRemoveUcafByIdIsGroupAvailable(string id, string companyId)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _queryRepository.SetDbContextInst(_companyDbContext);
+            UCAF ucaf = await _queryRepository.GetById(id,false);
+            if(ucaf.Type == "G")
+            {
+                var list =await _queryRepository.GetWhere(p => p.Code.StartsWith(ucaf.Code) && p.Type == "M").ToListAsync();
+                if (list.Count > 0)
+                {
+                    return true;
+                }
+                return false;
+            }else
+            {
+                return true;
+            }
+                
         }
     }
 }

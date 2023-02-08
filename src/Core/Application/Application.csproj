@@ -94,6 +94,8 @@
     <None Remove="Features\AppFeatures\MainRoleUser\Queries\GetMainRoleUserByUserId\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\CreateMainUCAF\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\UpdateUCAF\" />
+    <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\DeleteUCAF\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -186,6 +188,8 @@
     <Folder Include="Features\AppFeatures\MainRoleUser\Queries\GetMainRoleUserByUserId\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\CreateMainUCAF\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\UpdateUCAF\" />
+    <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\DeleteUCAF\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

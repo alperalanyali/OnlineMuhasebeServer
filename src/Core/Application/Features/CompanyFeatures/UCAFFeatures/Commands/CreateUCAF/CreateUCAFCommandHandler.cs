@@ -13,6 +13,8 @@ namespace Application.Features.CompanyFeatures.UCAFFeatures.Commands.CreateUCAF
         }
         public async Task<CreateUCAFCommandResponse> Handle(CreateUCAFCommand request, CancellationToken cancellationToken)
         {
+            if (request.Type == "A" ) throw new Exception("Hesap plani turu Grup ya da Muavin olmalidir!!");
+
             await _ucafService.CreateUCAFAsync(request, cancellationToken);
 
             return new();
