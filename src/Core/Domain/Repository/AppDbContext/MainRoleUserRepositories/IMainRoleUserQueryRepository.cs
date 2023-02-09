@@ -6,7 +6,6 @@ namespace Domain.Repository.AppDbContext.MainRoleUserRepositories
 {
 	public interface IMainRoleUserQueryRepository: IQueryGenericRepository<MainRoleUser>
     {
-		Task<string> GetMainRoleUserByUserId(string userId);
 	}
 }
 

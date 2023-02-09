@@ -17,7 +17,13 @@ namespace Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Comman
 
         public async Task<CreateNavigationItemMainRoleCommandResponse> Handle(CreateNavigationItemMainRoleCommand request, CancellationToken cancellationToken)
         {
-            var navItemMainRole = new NavigationItemMainRole(request.NavigationItemId,request.MainRoleId);
+            var result = await _navItemMainRoleService.CheckAlreadyNavigationItemMainRoleExist(request.NavigationItemId, request.MainRoleId);
+            if (result)
+            {
+                throw new Exception("Boyle bir kayit zaten var!!");
+            }
+
+            var navItemMainRole = new NavigationItemMainRole(request.NavigationItemId,request.MainRoleId);            
 
             await _navItemMainRoleService.CreateAsync(navItemMainRole, cancellationToken);
 

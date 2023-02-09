@@ -1,17 +1,4 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" line="54" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/CompanyServices/UCAFService.cs" relfile="src/External/Persistence/Services/CompanyServices/UCAFService.cs" line="2266" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
@@ -71,9 +58,7 @@
                     <Node name="CompanyFeatures" expanded="True">
                       <Node name="UCAFFeatures" expanded="True">
                         <Node name="Queries" expanded="True">
-                          <Node name="GetAllUcafs" expanded="True">
-                            <Node name="GetAllUcafsQueryResponse.cs" selected="True" />
-                          </Node>
+                          <Node name="GetAllUcafs" expanded="True" />
                         </Node>
                       </Node>
                     </Node>
@@ -102,4 +87,17 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" line="54" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/CompanyFeatures/Queries/GetAllCompany/GetAllCompanyCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/CompanyServices/UCAFService.cs" relfile="src/External/Persistence/Services/CompanyServices/UCAFService.cs" line="2266" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

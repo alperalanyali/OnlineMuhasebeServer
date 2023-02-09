@@ -6,6 +6,7 @@ using Application.Features.AppFeatures.MainRoleUser.Commands.CreateMainRoleUser;
 using Application.Features.AppFeatures.MainRoleUser.Commands.DeleteMainRoleUser;
 using Application.Features.AppFeatures.MainRoleUser.Commands.UpdateMainRoleUser;
 using Application.Features.AppFeatures.MainRoleUser.Queries.GetAllMainRoleUser;
+using Application.Features.AppFeatures.MainRoleUser.Queries.GetMainRoleUserByUserId;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
@@ -43,6 +44,12 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
         [HttpPost("[action]")]
         public async Task<IActionResult> Delete(DeleteMainRoleUserCommand request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetMainRoleUserByUserId(GetMainRoleUserByUserIdQuery request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);

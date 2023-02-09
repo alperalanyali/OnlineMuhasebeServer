@@ -1,6 +1,7 @@
 ﻿using System;
 using Application.Messaging;
 using Application.Services.AppServices;
+using Domain.Dtos;
 
 namespace Application.Features.AppFeatures.MainRoleUser.Queries.GetAllMainRoleUser
 {
@@ -15,9 +16,9 @@ namespace Application.Features.AppFeatures.MainRoleUser.Queries.GetAllMainRoleUs
 
         public async Task<GetAllMainRoleUserCommandResponse> Handle(GetAllMainRoleUserCommand request, CancellationToken cancellationToken)
         {
-            var result = await _mainRoleUserService.GetMainRolUsereAsync();
-
-            return new(result.Count(), result);
+            var result = await _mainRoleUserService.GetMainRolUsereAsync("");
+            var dtos = result.Select(s => new MainRoleUserDto(s.Id,s.UserId,s.AppUser.UserName,s.MainRoleId,s.MainRole.Title)).ToList();
+            return new(result.Count(), dtos);
         }
     }
 }

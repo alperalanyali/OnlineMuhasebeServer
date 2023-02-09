@@ -56,9 +56,9 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
 
         [HttpGet("[action]")]
-        public async Task<IActionResult> GetNavigationItemMainRoleByMainRoleId(string mainRoleId)
+        public async Task<IActionResult> GetNavigationItemMainRoleByUserId(string userId)
         {
-            var request = new GetNavigationItemMainRoleByMainRoleIdQuery(mainRoleId);
+            GetNavigationItemMainRoleByMainRoleIdQuery request = new GetNavigationItemMainRoleByMainRoleIdQuery(userId);
             var response = await _mediatR.Send(request);
 
             return Ok(response);

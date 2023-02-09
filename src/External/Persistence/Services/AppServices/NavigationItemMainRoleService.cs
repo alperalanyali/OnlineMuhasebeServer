@@ -21,6 +21,16 @@ namespace Persistence.Services.AppServices
             _appUnitOfWork = appUnitOfWork;
         }
 
+        public async Task<bool> CheckAlreadyNavigationItemMainRoleExist(string navigationItemId, string mainRoleId)
+        {
+            var result = await _navigationItemMainRoleQuery.GetFirstByExpression(p => p.MainRoleId == mainRoleId && p.NavigationItemId == navigationItemId);
+            if(result != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public async Task CreateAsync(NavigationItemMainRole navigationItemMainRole, CancellationToken cancellationToken)
         {
             await _navigationItemMainRoleCommand.AddAsync(navigationItemMainRole, cancellationToken);
@@ -38,9 +48,12 @@ namespace Persistence.Services.AppServices
             return await _navigationItemMainRoleQuery.GetById(Id);
         }
 
-        public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRoles()
+        public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRoles(string filter)
         {
-            return await _navigationItemMainRoleQuery.GetAll().ToListAsync();
+            return await _navigationItemMainRoleQuery
+                  .GetWhere(p => filter != null && (p.NavigationItem.NavigationName.ToLower().Contains(filter.ToLower()) )
+
+                  ).Include("NavigationItem").Include("MainRole").ToListAsync();
         }
 
         public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRolesByMainRoleId(string mainRoleId)

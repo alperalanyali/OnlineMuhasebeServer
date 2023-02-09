@@ -31,9 +31,11 @@ namespace Persistence.Services.AppServices
             await _appUnitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<IList<AppUserCompany>> GetAllUserCompany()
+        public async Task<IList<AppUserCompany>> GetAllUserCompany(string filter)
         {
-            return await _userCompanyQueryRepository.GetAll(false).ToListAsync();
+            return await _userCompanyQueryRepository.GetWhere(p => filter != null && (p.AppUser.UserName.ToLower().Contains(filter.ToLower())))
+                                                    .Include("AppUser").Include("Company").ToListAsync();
+                                                    
         }
 
         public async Task<IList<AppUserCompany>> GetCompanyListByUserId(string userId)
@@ -50,7 +52,7 @@ namespace Persistence.Services.AppServices
 
         public async Task<AppUserCompany> GetUserCompanyByUserIdAndCompanyId(string userId, string companyId)
         {
-            return (AppUserCompany)_userCompanyQueryRepository.GetWhere(p => p.AppUserId == userId && p.CompanyId == companyId);
+            return await _userCompanyQueryRepository.GetFirstByExpression(p => p.AppUserId == userId && p.CompanyId == companyId);
         }
 
         public async Task UpdateAsync(AppUserCompany userCompany, CancellationToken cancellationToken)

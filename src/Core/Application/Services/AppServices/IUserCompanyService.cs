@@ -5,7 +5,7 @@ namespace Application.Services.AppServices
 {
 	public interface IUserCompanyService
 	{
-        Task<IList<AppUserCompany>> GetAllUserCompany();
+        Task<IList<AppUserCompany>> GetAllUserCompany(string filter);
         Task<AppUserCompany> GetUserCompanyById(string id);
         Task CreateAsync(AppUserCompany userCompany,CancellationToken cancellationToken);
         Task UpdateAsync(AppUserCompany userCompany,CancellationToken cancellationToken);

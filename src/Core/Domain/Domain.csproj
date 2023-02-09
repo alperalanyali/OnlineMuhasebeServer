@@ -27,7 +27,6 @@
     <None Remove="Repository\AppDbContext\MainRoleRoleRepositories\" />
     <None Remove="Repository\AppDbContext\MainRoleUserRepositories\" />
     <None Remove="Dtos\" />
-    <None Remove="Repository\AppDbContext\UserCompanyRepositories\" />
     <None Remove="Repository\AppDbContext\NavigationItemRepositories\" />
     <None Remove="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
   </ItemGroup>
@@ -49,7 +48,6 @@
     <Folder Include="Repository\AppDbContext\MainRoleRoleRepositories\" />
     <Folder Include="Repository\AppDbContext\MainRoleUserRepositories\" />
     <Folder Include="Dtos\" />
-    <Folder Include="Repository\AppDbContext\UserCompanyRepositories\" />
     <Folder Include="Repository\AppDbContext\NavigationItemRepositories\" />
     <Folder Include="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
   </ItemGroup>

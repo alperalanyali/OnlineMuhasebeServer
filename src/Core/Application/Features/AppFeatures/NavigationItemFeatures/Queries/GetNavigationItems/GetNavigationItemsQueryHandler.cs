@@ -15,6 +15,7 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Queries.GetNav
 
         public async Task<GetNavigationItemsQueryResponse> Handle(GetNavigationItemsQuery request, CancellationToken cancellationToken)
         {
+           
             var results =await _navigationItemService.GetNavigationItems();
 
             return new(results.Count(),results);

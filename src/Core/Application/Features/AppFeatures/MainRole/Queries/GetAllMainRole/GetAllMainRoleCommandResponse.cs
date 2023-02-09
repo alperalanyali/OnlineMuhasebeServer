@@ -1,9 +1,11 @@
 ﻿using System;
+using Domain.Dtos;
+
 namespace Application.Features.AppFeatures.MainRole.Queries.GetAllMainRole
 {
 	public sealed record GetAllMainRoleCommandResponse(
 		int results,
-		IList<Domain.AppEntities.MainRole> Data
+		IList<MainRoleDto> Data
 		);
 	
 }

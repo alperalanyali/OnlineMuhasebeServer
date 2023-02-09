@@ -1,6 +1,7 @@
 ﻿using System;
 using Application.Messaging;
 using Application.Services.AppServices;
+using Domain.Dtos;
 
 namespace Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Queries.GetNavigationItemMainRoles
 {
@@ -15,8 +16,9 @@ namespace Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Querie
 
         public async Task<GetNavigationItemMainRolesQueryResponse> Handle(GetNavigationItemMainRolesQuery request, CancellationToken cancellationToken)
         {
-            var navItemMainRoles = await _navItemMainRoleService.GetNavigationItemMainRoles();
-            return new(navItemMainRoles.Count(), navItemMainRoles);
+            var navItemMainRoles = await _navItemMainRoleService.GetNavigationItemMainRoles("");
+            var navItemMainRoleDto = navItemMainRoles.Select(s => new NavigationItemMainRoleDto(s.Id, s.NavigationItemId, s.NavigationItem.NavigationName, s.MainRoleId, s.MainRole.Title)).ToList();
+            return new(navItemMainRoles.Count(), navItemMainRoleDto);
         }
     }
 }

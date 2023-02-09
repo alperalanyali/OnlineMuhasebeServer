@@ -43,14 +43,17 @@ namespace Persistence.Services.AppServices
             return await _mainRoleUserQueryRepository.GetById(Id);
         }
 
-        public async Task<string> GetMainRoleByUserId(string userId)
+        public async Task<MainRoleUser> GetMainRoleByUserId(string userId)
         {
-            return await _mainRoleUserQueryRepository.GetMainRoleUserByUserId(userId);
+            return await _mainRoleUserQueryRepository.GetFirstByExpression(p => p.UserId == userId);
         }
 
-        public async Task<IList<MainRoleUser>> GetMainRolUsereAsync()
+        public async Task<IList<MainRoleUser>> GetMainRolUsereAsync(string filter)
         {
-            return await _mainRoleUserQueryRepository.GetAll().ToListAsync();
+            return await _mainRoleUserQueryRepository.GetWhere(p => filter != null && (p.AppUser.UserName.ToLower().Contains(filter.ToLower())))
+                .Include("MainRole")
+                .Include("AppUser")
+                .ToListAsync();
         }
 
         public async Task<MainRoleUser> GetRolesByUserIdAndCompany(string userId, string companyId)

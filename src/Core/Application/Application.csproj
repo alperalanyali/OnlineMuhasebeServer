@@ -96,6 +96,11 @@
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\UpdateUCAF\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\DeleteUCAF\" />
+    <None Remove="Features\AppFeatures\AppUserFeatures\Quries\GetAllUsers\" />
+    <None Remove="Features\AppFeatures\UserFeatures\" />
+    <None Remove="Features\AppFeatures\UserFeatures\Commands\" />
+    <None Remove="Features\AppFeatures\UserFeatures\Queries\" />
+    <None Remove="Features\AppFeatures\UserFeatures\Queries\GetAllUsers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -190,6 +195,10 @@
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\UpdateUCAF\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\DeleteUCAF\" />
+    <Folder Include="Features\AppFeatures\UserFeatures\" />
+    <Folder Include="Features\AppFeatures\UserFeatures\Commands\" />
+    <Folder Include="Features\AppFeatures\UserFeatures\Queries\" />
+    <Folder Include="Features\AppFeatures\UserFeatures\Queries\GetAllUsers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

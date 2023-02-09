@@ -1,6 +1,7 @@
 ﻿using System;
 using Application.Messaging;
 using Application.Services.AppServices;
+using Domain.Dtos;
 
 namespace Application.Features.AppFeatures.CompanyFeatures.Queries.GetAllCompany
 {
@@ -16,7 +17,8 @@ namespace Application.Features.AppFeatures.CompanyFeatures.Queries.GetAllCompany
         public async Task<GetAllCompanyCommandResponse> Handle(GetAllCompanyCommand request, CancellationToken cancellationToken)
         {
             var result = await _companyService.GetAlCompanies();
-            return new(result.Count(), result);
+            var dtos = result.Select(p => new CompanyDto(p.Id,p.Name)).ToList();
+            return new(result.Count(), dtos);
         }
     }
 }
