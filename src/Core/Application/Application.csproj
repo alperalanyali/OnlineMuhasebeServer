@@ -90,7 +90,6 @@
     <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\DeleteNavigationItemMainRole\" />
     <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoles\" />
     <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleById\" />
-    <None Remove="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleByMainRoleId\" />
     <None Remove="Features\AppFeatures\MainRoleUser\Queries\GetMainRoleUserByUserId\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Commands\CreateMainUCAF\" />
     <None Remove="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />
@@ -189,7 +188,6 @@
     <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Commands\DeleteNavigationItemMainRole\" />
     <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoles\" />
     <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleById\" />
-    <Folder Include="Features\AppFeatures\NavigationItemMainRoleFeatures\Queries\GetNavigationItemMainRoleByMainRoleId\" />
     <Folder Include="Features\AppFeatures\MainRoleUser\Queries\GetMainRoleUserByUserId\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Commands\CreateMainUCAF\" />
     <Folder Include="Features\CompanyFeatures\UCAFFeatures\Queries\GetAllUcafs\" />

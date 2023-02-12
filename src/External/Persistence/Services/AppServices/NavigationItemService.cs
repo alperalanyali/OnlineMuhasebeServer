@@ -43,6 +43,11 @@ namespace Persistence.Services.AppServices
             return await _navigationItemQuery.GetAll().ToListAsync();
         }
 
+        public async Task<List<NavigationItem>> GetNavigationItemsByTopNavBarId(string navigationItemId)
+        {
+            return await _navigationItemQuery.GetWhere(p => p.TopNavigationId == navigationItemId).ToListAsync();
+        }
+
         public async Task UpdateAsync(NavigationItem navigationItem, CancellationToken cancellationToken)
         {
             _navigationItemCommand.Update(navigationItem);

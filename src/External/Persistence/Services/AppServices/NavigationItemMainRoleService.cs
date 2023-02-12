@@ -56,9 +56,9 @@ namespace Persistence.Services.AppServices
                   ).Include("NavigationItem").Include("MainRole").ToListAsync();
         }
 
-        public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRolesByMainRoleId(string mainRoleId)
+        public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRolesByUserId(string mainRoleId)
         {
-            return await _navigationItemMainRoleQuery.GetWhere(p => p.MainRoleId == mainRoleId).Include("NavigationItem").ToListAsync();
+            return await _navigationItemMainRoleQuery.GetWhere(p => p.MainRoleId == mainRoleId).Include("NavigationItem").OrderBy(p => p.NavigationItem.NavigationName).ToListAsync();
         }
 
         public Task UpdateAsync(NavigationItemMainRole navigationItemMainRole, CancellationToken cancellationToken)

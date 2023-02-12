@@ -10,6 +10,7 @@ namespace Application.Services.AppServices
         Task CreateAsync(NavigationItem navigationItem, CancellationToken cancellationToken);        
         Task DeleteNavigationItem(string id, CancellationToken cancellationToken);
         Task UpdateAsync(NavigationItem navigationItem, CancellationToken cancellationToken);
+        Task<List<NavigationItem>> GetNavigationItemsByTopNavBarId(string navigationItemId);
     }
 }
 

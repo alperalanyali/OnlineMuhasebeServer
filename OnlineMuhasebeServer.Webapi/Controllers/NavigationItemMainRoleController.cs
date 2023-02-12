@@ -6,7 +6,7 @@ using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Commands.C
 using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Commands.DeleteNavigationItemMainRole;
 using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Commands.UpdateNavigationItemMainRole;
 using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Queries.GetNavigationItemMainRoleById;
-using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Queries.GetNavigationItemMainRoleByMainRoleId;
+using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Queries.GetNavigationItemMainRoleByUserId;
 using Application.Features.AppFeatures.NavigationItemMainRoleFeatures.Queries.GetNavigationItemMainRoles;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -58,7 +58,7 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         [HttpGet("[action]")]
         public async Task<IActionResult> GetNavigationItemMainRoleByUserId(string userId)
         {
-            GetNavigationItemMainRoleByMainRoleIdQuery request = new GetNavigationItemMainRoleByMainRoleIdQuery(userId);
+            GetNavigationItemMainRoleByUserIdQuery request = new GetNavigationItemMainRoleByUserIdQuery(userId);
             var response = await _mediatR.Send(request);
 
             return Ok(response);

@@ -7,7 +7,8 @@ namespace Application.Features.CompanyFeatures.UCAFFeatures.Commands.UpdateUCAF
 		string Id,
 		string Code,
 		string Name,
-		string CompanyId
+		string CompanyId,
+		string Type
 		) :ICommand<UpdateUCAFCommandResponse>;
 	
 }

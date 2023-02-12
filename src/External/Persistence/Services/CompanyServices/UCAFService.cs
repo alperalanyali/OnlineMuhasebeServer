@@ -2279,6 +2279,21 @@ namespace Persistence.Services.CompanyServices
             }
                 
         }
+
+        public async Task<UCAF> GetByCodeAsync(string companyId, string code, CancellationToken cancellationToken)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _queryRepository.SetDbContextInst(_companyDbContext);
+
+            return await _queryRepository.GetFirstByExpression(p => p.Code == code);
+        }
+
+        public async Task<UCAF> GetByIdAsync(string id, string companyId)
+        {
+            _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
+            _queryRepository.SetDbContextInst(_companyDbContext);
+            return await _queryRepository.GetById(id,false);
+        }
     }
 }
 
