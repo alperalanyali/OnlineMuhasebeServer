@@ -8,6 +8,7 @@ using Application.Features.CompanyFeatures.UCAFFeatures.Commands.DeleteUCAF;
 using Application.Features.CompanyFeatures.UCAFFeatures.Commands.UpdateUCAF;
 using Application.Features.CompanyFeatures.UCAFFeatures.Queries.GetAllUcafs;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
 
@@ -15,6 +16,8 @@ using OnlineMuhasebeServer.Webapi.Abstraction;
 
 namespace OnlineMuhasebeServer.Webapi.Controllers
 {
+
+    [Authorize(AuthenticationSchemes ="Bearer")]
     public class UCAFController : ApiController
     {
         public UCAFController(IMediator mediatR) : base(mediatR)

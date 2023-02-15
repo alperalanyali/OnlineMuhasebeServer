@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.AppFeatures.AppUserFeatures.Commands.CreateUser;
+using Application.Features.AppFeatures.AuthFeatures.Commands.GetTokenByRefreshToken;
 using Application.Features.AppFeatures.AuthFeatures.Quries.GetRolesByUserIdAndCompanyId;
 using Application.Features.AuthFeatures.Commands.Login;
 using MediatR;
@@ -34,6 +35,12 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         }
         [HttpPost("[action]")]
         public async Task<IActionResult> GetRolesByUserIdAndCompany(GetRolesByUserIdAndCompanyIdQuery request)
+        {
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetTokenByRefreshToken(GetTokenByRefreshTokenCommand request)
         {
             var response = await _mediatR.Send(request);
             return Ok(response);
