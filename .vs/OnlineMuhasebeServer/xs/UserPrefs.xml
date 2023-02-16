@@ -1,14 +1,20 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandResponse.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Services/AppServices/NavigationItemMainRoleService.cs">
     <Files>
-      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/ReportsController.cs" Line="31" Column="73" />
-      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandHandler.cs" Line="16" Column="36" />
-      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" Line="39" Column="1" />
-      <File FileName="src/Core/Application/Behavior/ValidationBehavior.cs" Line="52" Column="1" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ExceptionMiddleware.cs" Line="17" Column="1" />
-      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandResponse.cs" Line="5" Column="14" />
-      <File FileName="src/External/Persistence/Context/CompanyDbContext.cs" Line="76" Column="84" />
+      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/ReportsController.cs" />
+      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandHandler.cs" />
+      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" />
+      <File FileName="src/Core/Application/Behavior/ValidationBehavior.cs" />
+      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ExceptionMiddleware.cs" />
+      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandResponse.cs" Line="11" Column="1" />
+      <File FileName="src/External/Persistence/Context/CompanyDbContext.cs" />
+      <File FileName="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItems/GetNavigationItemsQueryHandler.cs" Line="19" Column="73" />
+      <File FileName="src/Core/Application/Services/AppServices/INavigationItemService.cs" Line="9" Column="49" />
+      <File FileName="src/External/Persistence/Services/AppServices/NavigationItemService.cs" Line="43" Column="55" />
+      <File FileName="src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Queries/GetNavigationItemMainRoleByUserId/GetNavigationItemMainRoleByUserIdQueryHandler.cs" Line="27" Column="100" />
+      <File FileName="src/External/Persistence/Services/AppServices/NavigationItemMainRoleService.cs" Line="61" Column="161" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,18 +24,18 @@
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
                   <Node name="Features" expanded="True">
-                    <Node name="CompanyFeatures" expanded="True">
-                      <Node name="ReportFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="RequestReport" expanded="True">
-                            <Node name="RequestReportCommandResponse.cs" selected="True" />
-                          </Node>
-                        </Node>
+                    <Node name="AppFeatures" expanded="True">
+                      <Node name="NavigationItemMainRoleFeatures" expanded="True">
                         <Node name="Queries" expanded="True">
-                          <Node name="GetAllReport" expanded="True" />
+                          <Node name="GetNavigationItemMainRoleByUserId" expanded="True">
+                            <Node name="GetNavigationItemMainRoleByUserIdQueryHandler.cs" selected="True" />
+                          </Node>
                         </Node>
                       </Node>
                     </Node>
+                  </Node>
+                  <Node name="Services" expanded="True">
+                    <Node name="AppServices" expanded="True" />
                   </Node>
                 </Node>
                 <Node name="Domain" expanded="True">
@@ -43,6 +49,7 @@
                 <Node name="Persistence" expanded="True">
                   <Node name="Context" expanded="True" />
                   <Node name="Services" expanded="True">
+                    <Node name="AppServices" expanded="True" />
                     <Node name="CompanyServices" expanded="True" />
                   </Node>
                 </Node>
@@ -57,6 +64,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
@@ -70,7 +79,4 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/CompanyServices/UCAFService.cs" relfile="src/External/Persistence/Services/CompanyServices/UCAFService.cs" line="2293" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

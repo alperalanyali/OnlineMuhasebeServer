@@ -35,7 +35,8 @@ namespace Persistence.Services.AppServices
 
         public async Task<NavigationItem> GetById(string Id)
         {
-            return await _navigationItemQuery.GetById(Id);
+            var result = await _navigationItemQuery.GetById(Id, false);
+            return result;
         }
 
         public async Task<IList<NavigationItem>> GetNavigationItems()

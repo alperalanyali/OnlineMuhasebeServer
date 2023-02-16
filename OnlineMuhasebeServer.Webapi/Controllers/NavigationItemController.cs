@@ -38,7 +38,7 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Update(UpdateNavigationItemCommand request)
         {
-            var response = await _mediatR.Send(request);
+             var response = await _mediatR.Send(request);
             return Ok(response);
         }
 
