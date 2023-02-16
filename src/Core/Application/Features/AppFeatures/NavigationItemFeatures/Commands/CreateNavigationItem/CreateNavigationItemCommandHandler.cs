@@ -20,8 +20,9 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Commands.Creat
 
                 navigationName: request.NavigationName,
                 navigationPath : request.NavigationPath,
-                topNavigationId: request.TopNavigationId
-            );
+                topNavigationId: request.TopNavigationId,
+                priority: 0
+              );
             await _navItemService.CreateAsync(navigationItem, cancellationToken);
             return new();
         }

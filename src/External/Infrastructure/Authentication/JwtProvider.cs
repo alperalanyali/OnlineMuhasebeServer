@@ -34,7 +34,7 @@ namespace Infrastructure.Authentication
                 //new Claim(ClaimTypes.Role,string.Join(",",roles))
 
             };
-            DateTime expires = DateTime.Now.AddMinutes(1);
+            DateTime expires = DateTime.Now.AddMinutes(15);
             JwtSecurityToken jwtSecurityToken = new(
                 issuer: _jwtOptions.Issuer,
                 audience: _jwtOptions.Audience,

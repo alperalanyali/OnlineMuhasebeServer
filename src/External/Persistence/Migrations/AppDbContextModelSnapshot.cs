@@ -301,6 +301,9 @@ namespace Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Priority")
+                        .HasColumnType("int");
+
                     b.Property<string>("TopNavigationId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

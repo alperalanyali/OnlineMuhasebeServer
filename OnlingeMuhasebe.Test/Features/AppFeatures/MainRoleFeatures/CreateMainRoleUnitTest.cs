@@ -29,8 +29,8 @@ namespace OnlingeMuhasebe.Test.Features.AppFeatures.MainRoleFeatures
 		{
 			var command = new CreateMainRoleCommand(
 					Title: "Admin",
-					CompanyId: "c8eabb42-0474-43fc-8b97-6fefb2041a67",
-					IsRoleCreatedByAdmin: false
+					CompanyId: "c8eabb42-0474-43fc-8b97-6fefb2041a67"//,
+					//IsRoleCreatedByAdmin: false
 				);
 
 			var handler = new CreateRoleCommandHandler(_mainRoleService.Object);

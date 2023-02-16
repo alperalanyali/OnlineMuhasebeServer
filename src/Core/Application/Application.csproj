@@ -101,6 +101,10 @@
     <None Remove="Features\AppFeatures\UserFeatures\Queries\" />
     <None Remove="Features\AppFeatures\UserFeatures\Queries\GetAllUsers\" />
     <None Remove="Features\AppFeatures\AuthFeatures\Commands\GetTokenByRefreshToken\" />
+    <None Remove="Features\CompanyFeatures\ReportFeatures\" />
+    <None Remove="Features\CompanyFeatures\ReportFeatures\Commands\" />
+    <None Remove="Features\CompanyFeatures\ReportFeatures\Queries\" />
+    <None Remove="Features\CompanyFeatures\ReportFeatures\Queries\GetAllReport\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -199,6 +203,10 @@
     <Folder Include="Features\AppFeatures\UserFeatures\Queries\" />
     <Folder Include="Features\AppFeatures\UserFeatures\Queries\GetAllUsers\" />
     <Folder Include="Features\AppFeatures\AuthFeatures\Commands\GetTokenByRefreshToken\" />
+    <Folder Include="Features\CompanyFeatures\ReportFeatures\" />
+    <Folder Include="Features\CompanyFeatures\ReportFeatures\Commands\" />
+    <Folder Include="Features\CompanyFeatures\ReportFeatures\Queries\" />
+    <Folder Include="Features\CompanyFeatures\ReportFeatures\Queries\GetAllReport\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

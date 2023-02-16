@@ -35,6 +35,7 @@
     <None Remove="Repositories\AppDbContext\MainRoleUserRepositories\" />
     <None Remove="Repositories\AppDbContext\UserCompanyRepositories\" />
     <None Remove="Repositories\AppDbContext\NavigationItemMainRoleRepositories\" />
+    <None Remove="Repositories\CompanyDbContext\ReportRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
@@ -72,6 +73,7 @@
     <Folder Include="Repositories\AppDbContext\MainRoleUserRepositories\" />
     <Folder Include="Repositories\AppDbContext\UserCompanyRepositories\" />
     <Folder Include="Repositories\AppDbContext\NavigationItemMainRoleRepositories\" />
+    <Folder Include="Repositories\CompanyDbContext\ReportRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Domain\Domain.csproj" />
