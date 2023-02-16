@@ -58,7 +58,7 @@ namespace Persistence.Services.AppServices
 
         public async Task<IList<NavigationItemMainRole>> GetNavigationItemMainRolesByUserId(string mainRoleId)
         {
-            return await _navigationItemMainRoleQuery.GetWhere(p => p.MainRoleId == mainRoleId).Include("NavigationItem").OrderBy(p => p.NavigationItem.NavigationName).ToListAsync();
+            return await _navigationItemMainRoleQuery.GetWhere(p => p.MainRoleId == mainRoleId).Include("NavigationItem").OrderBy(p => p.NavigationItem.Priority).ToListAsync();
         }
 
         public Task UpdateAsync(NavigationItemMainRole navigationItemMainRole, CancellationToken cancellationToken)
