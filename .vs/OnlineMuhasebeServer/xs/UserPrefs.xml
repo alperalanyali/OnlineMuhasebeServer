@@ -1,75 +1,8 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Services/AppServices/NavigationItemMainRoleService.cs">
-    <Files>
-      <File FileName="OnlineMuhasebeServer.Webapi/Controllers/ReportsController.cs" />
-      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandHandler.cs" />
-      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" />
-      <File FileName="src/Core/Application/Behavior/ValidationBehavior.cs" />
-      <File FileName="OnlineMuhasebeServer.Webapi/Middleware/ExceptionMiddleware.cs" />
-      <File FileName="src/Core/Application/Features/CompanyFeatures/ReportFeatures/Commands/RequestReport/RequestReportCommandResponse.cs" Line="11" Column="1" />
-      <File FileName="src/External/Persistence/Context/CompanyDbContext.cs" />
-      <File FileName="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItems/GetNavigationItemsQueryHandler.cs" Line="19" Column="73" />
-      <File FileName="src/Core/Application/Services/AppServices/INavigationItemService.cs" Line="9" Column="49" />
-      <File FileName="src/External/Persistence/Services/AppServices/NavigationItemService.cs" Line="43" Column="55" />
-      <File FileName="src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Queries/GetNavigationItemMainRoleByUserId/GetNavigationItemMainRoleByUserIdQueryHandler.cs" Line="27" Column="100" />
-      <File FileName="src/External/Persistence/Services/AppServices/NavigationItemMainRoleService.cs" Line="61" Column="161" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="OnlineMuhasebeServer" expanded="True">
-            <Node name="src" expanded="True">
-              <Node name="Core" expanded="True">
-                <Node name="Application" expanded="True">
-                  <Node name="Features" expanded="True">
-                    <Node name="AppFeatures" expanded="True">
-                      <Node name="NavigationItemMainRoleFeatures" expanded="True">
-                        <Node name="Queries" expanded="True">
-                          <Node name="GetNavigationItemMainRoleByUserId" expanded="True">
-                            <Node name="GetNavigationItemMainRoleByUserIdQueryHandler.cs" selected="True" />
-                          </Node>
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
-                  <Node name="Services" expanded="True">
-                    <Node name="AppServices" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="Repository" expanded="True">
-                    <Node name="AppDbContext" expanded="True" />
-                    <Node name="GenericRepositories" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="External" expanded="True">
-                <Node name="Persistence" expanded="True">
-                  <Node name="Context" expanded="True" />
-                  <Node name="Services" expanded="True">
-                    <Node name="AppServices" expanded="True" />
-                    <Node name="CompanyServices" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="OnlineMuhasebeServer.Webapi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Middleware" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/NavigationItemController.cs" line="54" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Queries/GetNavigationItemById/GetNavigationItemByIdQueryHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/CompanyServices/UCAFService.cs" relfile="src/External/Persistence/Services/CompanyServices/UCAFService.cs" line="2266" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Commands/DeleteNavigationItemMainRole/DeleteNavigationItemMainRoleCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Commands/DeleteNavigationItemMainRole/DeleteNavigationItemMainRoleCommandHandler.cs" line="17" column="1" />
@@ -77,6 +10,46 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/MainRoleUser/Commands/CreateMainRoleUser/CreateMainRoleUserCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/MainRoleUser/Commands/CreateMainRoleUser/CreateMainRoleUserCommandHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/CompanyFeatures/UCAFFeatures/Commands/UpdateUCAF/UpdateUCAFCommandHandler.cs" relfile="src/Core/Application/Features/CompanyFeatures/UCAFFeatures/Commands/UpdateUCAF/UpdateUCAFCommandHandler.cs" line="18" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/CompanyServices/UCAFService.cs" relfile="src/External/Persistence/Services/CompanyServices/UCAFService.cs" line="2293" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" line="19" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" line="26" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/UpdateNavigationItem/UpdateNavigationItemCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/UpdateNavigationItem/UpdateNavigationItemCommandHandler.cs" line="18" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Services/AppServices/NavigationItemService.cs" relfile="src/External/Persistence/Services/AppServices/NavigationItemService.cs" line="37" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/OnlineMuhasebeServer.RabbitMQ/Program.cs" relfile="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" line="57" column="1" />
+      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/OnlineMuhasebeServer.RabbitMQ/Program.cs" relfile="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" line="21" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/OnlineMuhasebeServer.RabbitMQ/Program.cs">
+    <Files>
+      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" />
+      <File FileName="src/External/Infrastructure/Services/RabbitMQService.cs" />
+      <File FileName="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" Line="87" Column="2" />
+      <File FileName="src/OnlineMuhasebeServer.RabbitMQ/Context/AppDbContext.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineMuhasebeServer" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="External" expanded="True">
+                <Node name="Infrastructure" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Context" expanded="True" />
+                  <Node name="Services" expanded="True">
+                    <Node name="CompanyServices" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="OnlineMuhasebeServer.RabbitMQ" expanded="True">
+                <Node name="Context" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="OnlineMuhasebeServer.Webapi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

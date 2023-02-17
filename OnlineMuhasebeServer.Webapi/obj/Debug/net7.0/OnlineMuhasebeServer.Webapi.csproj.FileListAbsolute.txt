@@ -39,6 +39,7 @@
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/RabbitMQ.Client.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll

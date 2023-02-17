@@ -56,11 +56,11 @@ namespace Persistence.Context
             {
                 if(entry.State == EntityState.Added)
                 {
-                    entry.Property(p => p.CreatedDate).CurrentValue = DateTime.Now;
+                    entry.Property(p => p.CreatedDate).CurrentValue = Convert.ToDateTime(DateTimeOffset.Now);
                 }
                 if(entry.State == EntityState.Modified)
                 {
-                    entry.Property(p => p.UpdatedDate).CurrentValue = DateTime.Now;
+                    entry.Property(p => p.UpdatedDate).CurrentValue = Convert.ToDateTime(DateTimeOffset.Now);
                 }
             }
             return base.AddAsync(entity, cancellationToken);

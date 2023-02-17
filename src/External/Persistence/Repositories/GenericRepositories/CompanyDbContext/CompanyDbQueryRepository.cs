@@ -10,14 +10,14 @@ namespace Persistence.Repositories.GenericRepositories.CompanyDbContext
     {
         private Context.CompanyDbContext _context;
 
-        private static readonly Func<Context.CompanyDbContext, string,bool, Task<T>> GetByIdCompiled =
-            EF.CompileAsyncQuery((Context.CompanyDbContext context, string id,bool isTracking) =>
-            isTracking == true ? context.Set<T>().FirstOrDefault(p => p.Id == id) :  context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id == id));
+        private static readonly Func<Context.CompanyDbContext, string, Task<T>> GetByIdCompiled =
+           EF.CompileAsyncQuery((Context.CompanyDbContext context, string id) =>
+               context.Set<T>().AsNoTracking().FirstOrDefault(p => p.Id == id));
 
-        private static readonly Func<Context.CompanyDbContext,bool, Task<T>> GetFirstCompiled =
-    EF.CompileAsyncQuery((Context.CompanyDbContext context,bool isTracking) =>
-       isTracking == true ? context.Set<T>().FirstOrDefault() : context.Set<T>().AsNoTracking().FirstOrDefault()
-    );
+        private static readonly Func<Context.CompanyDbContext, Task<T>> GetFirstCompiled =
+            EF.CompileAsyncQuery((Context.CompanyDbContext context) =>
+                context.Set<T>().AsNoTracking().FirstOrDefault()
+            );
 
 
 
@@ -40,12 +40,12 @@ namespace Persistence.Repositories.GenericRepositories.CompanyDbContext
 
         public async Task<T> GetById(string id, bool isTracking = true)
         {
-            return await GetByIdCompiled(_context,id,isTracking);
+            return await GetByIdCompiled(_context,id);
         }
 
         public async Task<T> GetFirst( bool isTracking = true)
         {
-            return await GetFirstCompiled(_context,isTracking);
+            return await GetFirstCompiled(_context);
         }
 
         public async Task<T> GetFirstByExpression(Expression<Func<T, bool>> expression, bool isTracking = true)

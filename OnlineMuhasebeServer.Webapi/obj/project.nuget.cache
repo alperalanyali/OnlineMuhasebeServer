@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q8dNL2it4c6JCz+QM2kXXQ1FTvcbGPzChZa72sMmjOY90FrzMY9fwtAW0+64XDEgtehCyXKxt7iNvop9ElUldg==",
+  "dgSpecHash": "GtH72T4bgyW7U3vqxJJ8K/8QOVZFCmGBAjay0XvjqO/V4iYQcUwhkf4K4IUEioqYel/LzHXdWi0zLpksdP1TKw==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/OnlineMuhasebeServer.Webapi.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "/Users/alperalanyali/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/rabbitmq.client/6.4.0/rabbitmq.client.6.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
@@ -83,6 +84,7 @@
     "/Users/alperalanyali/.nuget/packages/system.text.encoding.codepages/5.0.0/system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
