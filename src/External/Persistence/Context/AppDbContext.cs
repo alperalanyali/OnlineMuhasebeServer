@@ -48,23 +48,28 @@ namespace Persistence.Context
 
 
         }
-
-        public override ValueTask<EntityEntry> AddAsync(object entity, CancellationToken cancellationToken = default)
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var entries = ChangeTracker.Entries<Entity>();
+
             foreach (var entry in entries)
             {
-                if(entry.State == EntityState.Added)
+                if (entry.State == EntityState.Added)
                 {
-                    entry.Property(p => p.CreatedDate).CurrentValue = Convert.ToDateTime(DateTimeOffset.Now);
+                    entry.Property(p => p.CreatedDate)
+                        .CurrentValue = DateTime.Now;
                 }
-                if(entry.State == EntityState.Modified)
+
+                if (entry.State == EntityState.Modified)
                 {
-                    entry.Property(p => p.UpdatedDate).CurrentValue = Convert.ToDateTime(DateTimeOffset.Now);
+                    entry.Property(p => p.UpdatedDate)
+                        .CurrentValue = DateTime.Now;
                 }
             }
-            return base.AddAsync(entity, cancellationToken);
+
+            return base.SaveChangesAsync(cancellationToken);
         }
+
 
         public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
         {
