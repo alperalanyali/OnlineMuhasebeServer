@@ -9,6 +9,7 @@ using Domain.Repository.AppDbContext.MainRoleUserRepositories;
 using Domain.Repository.AppDbContext.NavigationItemMainRoleRepositories;
 using Domain.Repository.AppDbContext.NavigationItemRepositories;
 using Domain.Repository.AppDbContext.UserCompanyRepositories;
+using Domain.Repository.CompanyDbContext.LogRepositories;
 using Domain.Repository.CompanyDbContext.ReportRepositories;
 using Domain.Repository.CompanyDbContext.UCAFRepositories;
 using Domain.UnitOfWork;
@@ -20,6 +21,7 @@ using Persistence.Repositories.AppDbContext.MainRoleUserRepositories;
 using Persistence.Repositories.AppDbContext.NavigationItemMainRoleRepositories;
 using Persistence.Repositories.AppDbContext.NavigationItemRepository;
 using Persistence.Repositories.AppDbContext.UserCompanyRepositories;
+using Persistence.Repositories.CompanyDbContext.LogRepositories;
 using Persistence.Repositories.CompanyDbContext.ReportRepositories;
 using Persistence.Repositories.CompanyDbContext.UCAFRepositories;
 using Persistence.Services.AppServices;
@@ -51,6 +53,7 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             #region CompanDbContext
             services.AddScoped<IUCAFService, UCAFService>();
             services.AddScoped<IReportService, ReportService>();
+            services.AddScoped<ILogService, LogService>();
             #endregion
             #endregion
 
@@ -79,8 +82,11 @@ namespace OnlineMuhasebeServer.Webapi.Configurations
             services.AddScoped<IUCAFQueryRepository, UCAFQueryRepository>();
             services.AddScoped<IReportCommandRepository, ReportCommandRepository>();
             services.AddScoped<IReportQueryRepository, ReportQueryRepository>();
+            services.AddScoped<ILogCommandRepository, LogCommandRepository>();
+            services.AddScoped<ILogQueryRepository, LogQueryRepository>();
             #endregion
-           
+
+
             #endregion
         }
     }

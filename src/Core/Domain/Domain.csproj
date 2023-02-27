@@ -30,6 +30,7 @@
     <None Remove="Repository\AppDbContext\NavigationItemRepositories\" />
     <None Remove="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
     <None Remove="Repository\CompanyDbContext\ReportRepositories\" />
+    <None Remove="Repository\CompanyDbContext\LogRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
@@ -52,6 +53,7 @@
     <Folder Include="Repository\AppDbContext\NavigationItemRepositories\" />
     <Folder Include="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
     <Folder Include="Repository\CompanyDbContext\ReportRepositories\" />
+    <Folder Include="Repository\CompanyDbContext\LogRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />

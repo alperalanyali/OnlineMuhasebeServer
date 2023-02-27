@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Application.Features.CompanyFeatures.ReportFeatures.Commands.RequestReport;
 using Application.Features.CompanyFeatures.ReportFeatures.Queries.GetAllReport;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
 
@@ -12,6 +13,7 @@ using OnlineMuhasebeServer.Webapi.Abstraction;
 
 namespace OnlineMuhasebeServer.Webapi.Controllers
 {
+    [Authorize(AuthenticationSchemes ="Bearer")]
     public class ReportsController : ApiController
     {
         public ReportsController(IMediator mediatR) : base(mediatR)

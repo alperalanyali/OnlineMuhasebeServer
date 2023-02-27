@@ -5,6 +5,7 @@ namespace Persistence.Constants
 	{
 		public static string UCAF = nameof(UCAF);
 		public static string Reports = nameof(Reports);
+		public static string Logs = nameof(Logs);
 	}
 }
 

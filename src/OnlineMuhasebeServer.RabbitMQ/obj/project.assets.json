@@ -2412,7 +2412,8 @@
         "dependencies": {
           "Domain": "1.0.0",
           "FluentValidation": "11.4.0",
-          "MediatR": "11.1.0"
+          "MediatR": "11.1.0",
+          "Newtonsoft.Json": "13.0.2"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}

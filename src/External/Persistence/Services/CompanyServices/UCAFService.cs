@@ -31,7 +31,7 @@ namespace Persistence.Services.CompanyServices
             _mapper = mapper;
         }
 
-        public async Task CreateUCAFAsync(CreateUCAFCommand request, CancellationToken cancellationToken)
+        public async Task<UCAF> CreateUCAFAsync(CreateUCAFCommand request, CancellationToken cancellationToken)
         {
             _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(request.CompanyId);
             _commandRepository.SetDbContextInst(_companyDbContext);
@@ -43,6 +43,8 @@ namespace Persistence.Services.CompanyServices
             await _commandRepository.AddAsync(ucaf, cancellationToken);
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+            return ucaf;
         }
 
         public async Task CreateCompanyMainUcafsToCompany(string companyId, CancellationToken cancellationToken)
@@ -2250,14 +2252,16 @@ namespace Persistence.Services.CompanyServices
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task DeleteById(string companyId, string id,CancellationToken cancellationToken)
+        public async Task<UCAF> DeleteById(string companyId, string id,CancellationToken cancellationToken)
         {
             _companyDbContext = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
             _commandRepository.SetDbContextInst(_companyDbContext);
             _unitOfWork.SetDbContextInst(_companyDbContext);
+            UCAF ucaf = await _queryRepository.GetById(id);
             await _commandRepository.RemoveById(id);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
+            return ucaf;
         }
 
         public async Task<bool> CheckRemoveUcafByIdIsGroupAvailable(string id, string companyId)
