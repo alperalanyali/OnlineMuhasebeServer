@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6WZIXDfhNTxc9JR5XyCI1EsHNTsJ6FnA6DKBgWO/SaQwbYmc05vBkP/+KqY0wnSQDes1JijZqTcbbrn0b3joOQ==",
+  "dgSpecHash": "FfUuriFrqYKAltqeKBx47RV+ct87BHPL/xNE/xq71R4Krt8i5vw6zHgID3BJcLBgRJAHu1YKXSMP6DONRPY8uA==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Persistence/Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/alperalanyali/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/entityframeworkcorepagination.nuget/1.0.1/entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",

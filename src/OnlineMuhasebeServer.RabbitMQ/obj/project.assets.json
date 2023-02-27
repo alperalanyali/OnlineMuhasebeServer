@@ -101,6 +101,18 @@
           }
         }
       },
+      "EntityFrameworkCorePagination.Nuget/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.2"
+        },
+        "compile": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        }
+      },
       "ExcelNumberFormat/1.1.0": {
         "type": "package",
         "compile": {
@@ -2413,6 +2425,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "EntityFrameworkCorePagination.Nuget": "1.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore": "7.0.2"
         },
@@ -2430,6 +2443,7 @@
           "Application": "1.0.0",
           "AutoMapper": "12.0.1",
           "Domain": "1.0.0",
+          "EntityFrameworkCorePagination.Nuget": "1.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
@@ -2532,6 +2546,20 @@
         "lib/netstandard1.3/DocumentFormat.OpenXml.xml",
         "lib/netstandard2.0/DocumentFormat.OpenXml.dll",
         "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "EntityFrameworkCorePagination.Nuget/1.0.1": {
+      "sha512": "MvMuY/ZLDvL+epSynwI6M8+ygf01LLx5Xz5FXM1KCN222a0Q4kcKJ90GN75Fxy+DxH231t67ZFAbkywoxRAYyw==",
+      "type": "package",
+      "path": "entityframeworkcorepagination.nuget/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Actions-media-seek-forward-icon.png",
+        "README.md",
+        "entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
+        "entityframeworkcorepagination.nuget.nuspec",
+        "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll"
       ]
     },
     "ExcelNumberFormat/1.1.0": {
@@ -7607,7 +7635,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

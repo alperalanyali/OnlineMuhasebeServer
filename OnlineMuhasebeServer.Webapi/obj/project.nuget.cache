@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tCEeGz/iQvu/n0fqvdHHwIPoJYxMH1iFHauH6HYPgKXLaduyP0MRbQU1YZAau9WUPqDsOEsZMXuCOYfPgeWDCA==",
+  "dgSpecHash": "eXHVpIFRO4gDUjE2tkrZwOITQsm7465QdmeUQ9Y7POs8O1tQbDymCenki+tDM0KRUr2YihtLZ62uQj6kbDUwkQ==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/OnlineMuhasebeServer.Webapi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/alperalanyali/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/entityframeworkcorepagination.nuget/1.0.1/entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.4.0/fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",

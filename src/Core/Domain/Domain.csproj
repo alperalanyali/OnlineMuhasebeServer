@@ -60,5 +60,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="EntityFrameworkCorePagination.Nuget" Version="1.0.1" />
   </ItemGroup>
 </Project>

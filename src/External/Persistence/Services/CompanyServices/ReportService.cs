@@ -8,6 +8,7 @@ using Domain.CompanyEntities;
 using Domain.Dtos;
 using Domain.Repository.CompanyDbContext.ReportRepositories;
 using Domain.UnitOfWork;
+using EntityFrameworkCorePagination.Nuget.Pagination;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Context;
 
@@ -31,11 +32,13 @@ namespace Persistence.Services.CompanyServices
         }
 
 
-        public async Task<IList<Report>> GetAllReportsByCompanyId(string companyId)
+        public async Task<PaginationResult<Report>> GetAllReportsByCompanyId(string companyId,int pageNumber =1,int pageSize=5)
         {
             _context = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
             _reportQueryRepo.SetDbContextInst(_context);
-            return await _reportQueryRepo.GetAll(false).OrderByDescending(p => p.CreatedDate).ToListAsync();
+            var result = await _reportQueryRepo.GetAllPagination(pageNumber,pageSize);           
+            result.Datas.OrderByDescending(p => p.CreatedDate);
+            return result;
         }
 
 

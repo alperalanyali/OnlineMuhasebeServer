@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sI66jz8Cp5SY2SkcsKOkNWS3iWpYS144/ZQZD7jXmDii6eWHMZELpC6j7+DMCp4QilVo+ivzZnK7xVK2YOEuvg==",
+  "dgSpecHash": "vOfzS5TYy5uhTS0sQLgj/gM/qLIDkqEzONlorO+tM7tMDHEJtDqKO/n6VtE8Xs9AQzHQ4zmINCaOfVQZWhbQow==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/OnlineMuhasebeServer.RabbitMQ/OnlineMuhasebeServer.RabbitMQ.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/alperalanyali/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/closedxml/0.100.3/closedxml.0.100.3.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/documentformat.openxml/2.16.0/documentformat.openxml.2.16.0.nupkg.sha512",
+    "/Users/alperalanyali/.nuget/packages/entityframeworkcorepagination.nuget/1.0.1/entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/irony.netcore/1.0.11/irony.netcore.1.0.11.nupkg.sha512",

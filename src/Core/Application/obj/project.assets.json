@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "EntityFrameworkCorePagination.Nuget/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.2"
+        },
+        "compile": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        }
+      },
       "FluentValidation/11.4.0": {
         "type": "package",
         "compile": {
@@ -362,6 +374,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "EntityFrameworkCorePagination.Nuget": "1.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore": "7.0.2"
         },
@@ -375,6 +388,20 @@
     }
   },
   "libraries": {
+    "EntityFrameworkCorePagination.Nuget/1.0.1": {
+      "sha512": "MvMuY/ZLDvL+epSynwI6M8+ygf01LLx5Xz5FXM1KCN222a0Q4kcKJ90GN75Fxy+DxH231t67ZFAbkywoxRAYyw==",
+      "type": "package",
+      "path": "entityframeworkcorepagination.nuget/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Actions-media-seek-forward-icon.png",
+        "README.md",
+        "entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
+        "entityframeworkcorepagination.nuget.nuspec",
+        "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll"
+      ]
+    },
     "FluentValidation/11.4.0": {
       "sha512": "WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
       "type": "package",
@@ -954,7 +981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

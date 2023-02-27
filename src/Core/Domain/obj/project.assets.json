@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "EntityFrameworkCorePagination.Nuget/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.2"
+        },
+        "compile": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        },
+        "runtime": {
+          "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -438,6 +450,20 @@
     }
   },
   "libraries": {
+    "EntityFrameworkCorePagination.Nuget/1.0.1": {
+      "sha512": "MvMuY/ZLDvL+epSynwI6M8+ygf01LLx5Xz5FXM1KCN222a0Q4kcKJ90GN75Fxy+DxH231t67ZFAbkywoxRAYyw==",
+      "type": "package",
+      "path": "entityframeworkcorepagination.nuget/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Actions-media-seek-forward-icon.png",
+        "README.md",
+        "entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
+        "entityframeworkcorepagination.nuget.nuspec",
+        "lib/net7.0/EntityFrameworkCorePagination.Nuget.dll"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1080,6 +1106,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "EntityFrameworkCorePagination.Nuget >= 1.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.2"
@@ -1127,6 +1154,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "EntityFrameworkCorePagination.Nuget": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.2, )"
@@ -1158,7 +1189,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
       }
     }
   }

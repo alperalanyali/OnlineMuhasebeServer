@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Linq.Expressions;
 using Domain.Abstractions;
+
+
 using Domain.Repository.GenericRepositories.AppDbContext;
+using EntityFrameworkCorePagination.Nuget.Pagination;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 
 namespace Persistence.Repositories.GenericRepositories.AppDbContext
 {
@@ -68,6 +72,39 @@ namespace Persistence.Repositories.GenericRepositories.AppDbContext
             if (!isTracking)
                 result = result.AsNoTracking();
             return result;
+        }
+
+        public async Task<EntityFrameworkCorePagination.Nuget.Pagination.PaginationResult<T>> GetAllPagination(int pageNumber = 1, int pageSize = 10, Expression<Func<T, bool>> orderExpression = null, bool isOrderDesc = false)
+        {
+            if (orderExpression != null)
+            {
+                if (isOrderDesc)
+                {
+                    return await Entity.OrderByDescending(orderExpression).ToPagedListAsync(pageNumber, pageSize);
+                }
+                return await Entity.OrderBy(orderExpression).ToPagedListAsync(pageNumber, pageSize);
+
+            }          
+
+            return await Entity.ToPagedListAsync(pageNumber, pageSize);
+       
+            
+            //return await Entity.Skip((pageNumber-1) * pageSize).Take(pageSize).ToListAsync();
+        }
+
+        public async Task<PaginationResult<T>> GetWhere(Expression<Func<T, bool>> expression, int pageNumber, int pageSize, Expression<Func<T, bool>> orderExpression = null, bool isOrderDesc = false)
+        {
+            if (orderExpression != null)
+            {
+                if (isOrderDesc)
+                {
+                    return await Entity.Where(expression).OrderByDescending(orderExpression).ToPagedListAsync(pageNumber, pageSize);
+                }
+                return await Entity.Where(expression).OrderBy(orderExpression).ToPagedListAsync(pageNumber, pageSize);
+
+            }
+            
+            return await Entity.Where(expression).ToPagedListAsync(pageNumber, pageSize);
         }
     }
 }

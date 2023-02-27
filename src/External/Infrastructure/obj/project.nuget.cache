@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "JLOkd+WaxdES+HxVD7GWwqnNXWKf+q/T8HVsxpn78/Qh59SjbZSIr1L9vdIwYAvAQoo7Z5UpQZzuZ2fczdKJtw==",
+  "dgSpecHash": "m7eTzRVR3oZ2j8AnOxdEv2ttRg2+X3WIeiyiaIFZiGFR+BjCysWqo5NQ+8CXdUiUu9zRwJGAJjGAwtvKynikkA==",
   "success": true,
   "projectFilePath": "/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/External/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
+    "/Users/alperalanyali/.nuget/packages/entityframeworkcorepagination.nuget/1.0.1/entityframeworkcorepagination.nuget.1.0.1.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/fluentvalidation/11.4.0/fluentvalidation.11.4.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/Users/alperalanyali/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",

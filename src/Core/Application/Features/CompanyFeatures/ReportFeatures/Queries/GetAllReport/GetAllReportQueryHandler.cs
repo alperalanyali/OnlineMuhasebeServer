@@ -1,6 +1,8 @@
 ﻿using System;
 using Application.Messaging;
 using Application.Services.CompanyServices;
+using Domain.CompanyEntities;
+using EntityFrameworkCorePagination.Nuget.Pagination;
 
 namespace Application.Features.CompanyFeatures.ReportFeatures.Queries.GetAllReport
 {
@@ -15,9 +17,9 @@ namespace Application.Features.CompanyFeatures.ReportFeatures.Queries.GetAllRepo
 
         public async Task<GetAllReportQueryResponse> Handle(GetAllReportQuery request, CancellationToken cancellationToken)
         {
-            var result =await _reportService.GetAllReportsByCompanyId(request.CompanyId);
-
-            return new(result.Count(),result);
+            var result =await _reportService.GetAllReportsByCompanyId(request.CompanyId,request.PageNumber,request.PageSize);
+            //var newList = new PaginationResult<Report>();
+            return new(result);
         }
     }
 }

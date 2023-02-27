@@ -1,55 +1,6 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Services/AppServices/NavigationItemService.cs">
-    <Files>
-      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" />
-      <File FileName="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" />
-      <File FileName="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/UpdateNavigationItem/UpdateNavigationItemCommandHandler.cs" />
-      <File FileName="src/External/Persistence/Services/AppServices/NavigationItemService.cs" Line="37" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="OnlineMuhasebeServer" expanded="True">
-            <Node name="src" expanded="True">
-              <Node name="Core" expanded="True">
-                <Node name="Application" expanded="True">
-                  <Node name="Features" expanded="True">
-                    <Node name="AppFeatures" expanded="True">
-                      <Node name="NavigationItemFeatures" expanded="True">
-                        <Node name="Commands" expanded="True">
-                          <Node name="UpdateNavigationItem" expanded="True" />
-                        </Node>
-                      </Node>
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="External" expanded="True">
-                <Node name="Infrastructure" expanded="True">
-                  <Node name="Services" expanded="True" />
-                </Node>
-                <Node name="Persistence" expanded="True">
-                  <Node name="Context" expanded="True" />
-                  <Node name="Services" expanded="True">
-                    <Node name="AppServices" expanded="True" />
-                    <Node name="CompanyServices" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="OnlineMuhasebeServer.RabbitMQ" expanded="True">
-                <Node name="Context" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="OnlineMuhasebeServer.Webapi" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
@@ -65,4 +16,65 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/OnlineMuhasebeServer.RabbitMQ/Program.cs" relfile="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" line="38" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/External/Persistence/Repositories/GenericRepositories/AppDbContext/AppQueryRepository.cs">
+    <Files>
+      <File FileName="src/External/Persistence/Services/CompanyServices/ReportService.cs" Line="40" Column="1" />
+      <File FileName="src/Core/Domain/Repository/GenericRepositories/IQueryGenericRepository.cs" Line="1" Column="1" />
+      <File FileName="src/External/Persistence/Repositories/GenericRepositories/AppDbContext/AppQueryRepository.cs" Line="79" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OnlineMuhasebeServer" expanded="True">
+            <Node name="src" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="Application" expanded="True">
+                  <Node name="Features" expanded="True">
+                    <Node name="CompanyFeatures" expanded="True">
+                      <Node name="ReportFeatures" expanded="True">
+                        <Node name="Queries" expanded="True">
+                          <Node name="GetAllReport" expanded="True" />
+                        </Node>
+                      </Node>
+                    </Node>
+                  </Node>
+                  <Node name="Services" expanded="True">
+                    <Node name="CompanyServices" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="Domain" expanded="True">
+                  <Node name="Repository" expanded="True">
+                    <Node name="GenericRepositories" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="External" expanded="True">
+                <Node name="Infrastructure" expanded="True" />
+                <Node name="Persistence" expanded="True">
+                  <Node name="Context" expanded="True" />
+                  <Node name="Repositories" expanded="True">
+                    <Node name="GenericRepositories" expanded="True">
+                      <Node name="AppDbContext" expanded="True">
+                        <Node name="AppQueryRepository.cs" selected="True" />
+                      </Node>
+                      <Node name="CompanyDbContext" expanded="True" />
+                    </Node>
+                  </Node>
+                  <Node name="Services" expanded="True">
+                    <Node name="CompanyServices" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="OnlineMuhasebeServer.Webapi" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>
