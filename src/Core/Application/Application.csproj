@@ -109,6 +109,11 @@
     <None Remove="Features\CompanyFeatures\LogFeatures\Commands\" />
     <None Remove="Features\CompanyFeatures\LogFeatures\Queries\" />
     <None Remove="Features\CompanyFeatures\LogFeatures\Queries\GetLogsByTableName\" />
+    <None Remove="Features\CompanyFeatures\BookEntryFeatures\" />
+    <None Remove="Features\CompanyFeatures\BookEntryFeatures\Commands\" />
+    <None Remove="Features\CompanyFeatures\BookEntryFeatures\Quries\" />
+    <None Remove="Features\CompanyFeatures\BookEntryFeatures\Commands\CreateBookEntry\" />
+    <None Remove="Features\CompanyFeatures\BookEntryFeatures\Quries\GetAllBookEntries\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="11.1.0" />
@@ -216,6 +221,11 @@
     <Folder Include="Features\CompanyFeatures\LogFeatures\Commands\" />
     <Folder Include="Features\CompanyFeatures\LogFeatures\Queries\" />
     <Folder Include="Features\CompanyFeatures\LogFeatures\Queries\GetLogsByTableName\" />
+    <Folder Include="Features\CompanyFeatures\BookEntryFeatures\" />
+    <Folder Include="Features\CompanyFeatures\BookEntryFeatures\Commands\" />
+    <Folder Include="Features\CompanyFeatures\BookEntryFeatures\Quries\" />
+    <Folder Include="Features\CompanyFeatures\BookEntryFeatures\Commands\CreateBookEntry\" />
+    <Folder Include="Features\CompanyFeatures\BookEntryFeatures\Quries\GetAllBookEntries\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

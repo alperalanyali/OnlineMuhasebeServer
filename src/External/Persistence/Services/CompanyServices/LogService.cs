@@ -69,7 +69,7 @@ namespace Persistence.Services.CompanyServices
                         Progress = item.Progress,
                         UserId = item.UserId,
                         UserEmail = user?.Email,
-                        UserName = user?.FullName
+                        UserName = user.FullName
                     };
                     logDtos.Add(logDto);
                 }

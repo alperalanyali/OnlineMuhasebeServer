@@ -31,6 +31,7 @@
     <None Remove="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
     <None Remove="Repository\CompanyDbContext\ReportRepositories\" />
     <None Remove="Repository\CompanyDbContext\LogRepositories\" />
+    <None Remove="Repository\CompanyDbContext\BookEntryRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppEntities\" />
@@ -54,6 +55,7 @@
     <Folder Include="Repository\AppDbContext\NavigationItemMainRoleRepositories\" />
     <Folder Include="Repository\CompanyDbContext\ReportRepositories\" />
     <Folder Include="Repository\CompanyDbContext\LogRepositories\" />
+    <Folder Include="Repository\CompanyDbContext\BookEntryRepositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
