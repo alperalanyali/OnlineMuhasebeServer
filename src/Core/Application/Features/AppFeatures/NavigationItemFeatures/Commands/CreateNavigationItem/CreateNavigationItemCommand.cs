@@ -6,7 +6,8 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Commands.Creat
 	public record CreateNavigationItemCommand(
 		string NavigationName,
 		string NavigationPath,
-		string TopNavigationId
+		string TopNavigationId,
+		int Priority
 
 		):ICommand<CreateNavigationItemCommandResponse>;
 	

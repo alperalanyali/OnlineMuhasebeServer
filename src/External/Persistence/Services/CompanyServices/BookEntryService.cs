@@ -31,7 +31,7 @@ namespace Persistence.Services.CompanyServices
         {
             context = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
             _bookCommand.SetDbContextInst(context);
-
+            _companyUnitOfWork.SetDbContextInst(context);
             await _bookCommand.AddAsync(bookEntry, cancellationToken);
             await _companyUnitOfWork.SaveChangesAsync(cancellationToken);
         }
@@ -40,6 +40,7 @@ namespace Persistence.Services.CompanyServices
         {
             context = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
             _bookQuery.SetDbContextInst(context);
+            _companyUnitOfWork.SetDbContextInst(context);
             BookEntry lastBookEntry = await _bookQuery.GetAll().OrderByDescending(p => p.CreatedDate).FirstOrDefaultAsync();
 
             if (lastBookEntry is null)
@@ -58,13 +59,15 @@ namespace Persistence.Services.CompanyServices
             return newBookEntryNumber;
         }
 
-        public async Task<PaginationResult<BookEntry>> GetAllAsync(string companyId, int pageNumber, int pageSize)
+        public async Task<PaginationResult<BookEntry>> GetAllAsync(string companyId, int pageNumber, int pageSize,int year)
         {
             context = (CompanyDbContext)_contextService.CreateDBContextInstance(companyId);
             _bookQuery.SetDbContextInst(context);
 
+            string startingDateString = "01.01." + year;
+            string endDateString = "31.12." + year;
 
-            return await _bookQuery.GetAll().OrderByDescending(p => p.CreatedDate).ToPagedListAsync(pageNumber,
+            return await _bookQuery.GetWhere(p => p.Date>= Convert.ToDateTime(startingDateString) && p.Date <= Convert.ToDateTime(endDateString) ).OrderByDescending(p => p.CreatedDate).ToPagedListAsync(pageNumber,
             pageSize);
         }
 

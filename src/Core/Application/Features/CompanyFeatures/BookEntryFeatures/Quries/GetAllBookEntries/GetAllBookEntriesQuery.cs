@@ -5,8 +5,9 @@ namespace Application.Features.CompanyFeatures.BookEntryFeatures.Quries.GetAllBo
 {
 	public sealed record GetAllBookEntriesQuery(
 		string CompanyId,
-		int PageNumber,
-		int PageSize
+		int Year,
+		int PageNumber=1,
+		int PageSize=10
 		):IQuery<PaginationResult<GetAllBookEntriesQueryResponse>>;
 	
 }

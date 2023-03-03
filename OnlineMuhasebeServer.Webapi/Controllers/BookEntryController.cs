@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Features.CompanyFeatures.BookEntryFeatures.Commands.CreateBookEntry;
+using Application.Features.CompanyFeatures.BookEntryFeatures.Quries.GetAllBookEntries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using OnlineMuhasebeServer.Webapi.Abstraction;
@@ -17,12 +18,17 @@ namespace OnlineMuhasebeServer.Webapi.Controllers
         {
         }
         [HttpPost("[action]")]
-        public async Task<IActionResult> Create(CreateBookEntryCommand request,CancellationToken cancellationToken) {
+        public async Task<IActionResult> Create(CreateBookEntryCommand request, CancellationToken cancellationToken) {
 
             var response = await _mediatR.Send(request, cancellationToken);
             return Ok(response);
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GetAllBoonEntries(GetAllBookEntriesQuery request){
 
-    }
+            var response = await _mediatR.Send(request);
+            return Ok(response);
+        }
+     }
 }
 

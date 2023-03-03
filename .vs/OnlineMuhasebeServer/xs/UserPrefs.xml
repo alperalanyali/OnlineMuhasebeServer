@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{20AF2863-D283-48B1-BE2B-831F3E7F9552}|http">
-  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" relfile="OnlineMuhasebeServer.Webapi/Controllers/UserCompanyController.cs" line="51" column="1" />
@@ -10,15 +9,13 @@
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Commands/DeleteNavigationItemMainRole/DeleteNavigationItemMainRoleCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemMainRoleFeatures/Commands/DeleteNavigationItemMainRole/DeleteNavigationItemMainRoleCommandHandler.cs" line="17" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/MainRoleUser/Queries/GetMainRoleUserByUserId/GetMainRoleUserByUserIdQueryCommand.cs" relfile="src/Core/Application/Features/AppFeatures/MainRoleUser/Queries/GetMainRoleUserByUserId/GetMainRoleUserByUserIdQueryCommand.cs" line="19" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/MainRoleUser/Commands/CreateMainRoleUser/CreateMainRoleUserCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/MainRoleUser/Commands/CreateMainRoleUser/CreateMainRoleUserCommandHandler.cs" line="18" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" line="19" column="1" />
-      <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" relfile="src/Core/Application/Features/AppFeatures/NavigationItemFeatures/Commands/CreateNavigationItem/CreateNavigationItemCommandHandler.cs" line="26" column="1" />
       <Breakpoint file="/Users/alperalanyali/Desktop/OnlineMuhasebeServer/src/OnlineMuhasebeServer.RabbitMQ/Program.cs" relfile="src/OnlineMuhasebeServer.RabbitMQ/Program.cs" line="38" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Application/Features/CompanyFeatures/BookEntryFeatures/Commands/CreateBookEntry/CreateBookEntryValidator.cs">
+  <MonoDevelop.Ide.ItemProperties.OnlineMuhasebeServer.Webapi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/Application/Features/CompanyFeatures/BookEntryFeatures/Quries/GetAllBookEntries/GetAllBookEntriesQueryHandler.cs">
     <Files>
-      <File FileName="src/Core/Application/Features/CompanyFeatures/BookEntryFeatures/Commands/CreateBookEntry/CreateBookEntryCommandHandler.cs" Line="40" Column="1" />
-      <File FileName="src/Core/Application/Features/CompanyFeatures/BookEntryFeatures/Commands/CreateBookEntry/CreateBookEntryValidator.cs" Line="22" Column="1" />
+      <File FileName="src/Core/Application/Features/CompanyFeatures/BookEntryFeatures/Quries/GetAllBookEntries/GetAllBookEntriesQueryHandler.cs" Line="26" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,23 +24,22 @@
             <Node name="src" expanded="True">
               <Node name="Core" expanded="True">
                 <Node name="Application" expanded="True">
+                  <Node name="Behavior" expanded="True" />
                   <Node name="Features" expanded="True">
                     <Node name="CompanyFeatures" expanded="True">
                       <Node name="BookEntryFeatures" expanded="True">
                         <Node name="Commands" expanded="True">
-                          <Node name="CreateBookEntry" expanded="True">
-                            <Node name="CreateBookEntryValidator.cs" selected="True" />
+                          <Node name="CreateBookEntry" expanded="True" />
+                        </Node>
+                        <Node name="Quries" expanded="True">
+                          <Node name="GetAllBookEntries" expanded="True">
+                            <Node name="GetAllBookEntriesQueryHandler.cs" selected="True" />
                           </Node>
                         </Node>
                       </Node>
                     </Node>
                   </Node>
-                  <Node name="Services" expanded="True">
-                    <Node name="CompanyServices" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="CompanyEntities" expanded="True" />
+                  <Node name="Services" expanded="True" />
                 </Node>
               </Node>
               <Node name="External" expanded="True">
@@ -51,8 +47,12 @@
                   <Node name="Services" expanded="True" />
                 </Node>
                 <Node name="Persistence" expanded="True">
-                  <Node name="Constants" expanded="True" />
+                  <Node name="Context" expanded="True" />
+                  <Node name="Migrations" expanded="True">
+                    <Node name="CompanyDb" expanded="True" />
+                  </Node>
                   <Node name="Services" expanded="True">
+                    <Node name="AppServices" expanded="True" />
                     <Node name="CompanyServices" expanded="True" />
                   </Node>
                 </Node>
@@ -61,12 +61,10 @@
             <Node name="OnlineMuhasebeServer.Webapi" expanded="True">
               <Node name="Configurations" expanded="True" />
               <Node name="Controllers" expanded="True" />
+              <Node name="Middleware" expanded="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

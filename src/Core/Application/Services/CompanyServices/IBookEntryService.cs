@@ -9,7 +9,7 @@ namespace Application.Services.CompanyServices
 
 		Task AddAsync(string companyId, BookEntry bookEntry, CancellationToken cancellationToken);
 		Task<string> GetNewBookEntryNumber(string companyId);
-		Task<PaginationResult<BookEntry>>GetAllAsync(string companyId,int pageNumber,int pageSize);
+		Task<PaginationResult<BookEntry>>GetAllAsync(string companyId,int pageNumber,int pageSize,int year);
 		int GetCount(string companyId);
 	}
 }

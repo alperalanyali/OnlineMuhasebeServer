@@ -7,7 +7,8 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Commands.Updat
 		string Id,
 		string NavigationName,
 		string NavigationPath,
-		string TopNavigationId
+		string TopNavigationId,
+		int Priority
 		):ICommand<UpdateNavigationItemCommandResponse>;
 	
 }

@@ -20,6 +20,7 @@ namespace Application.Features.AppFeatures.NavigationItemFeatures.Commands.Updat
             navItem.NavigationName = request.NavigationName;
             navItem.NavigationPath = request.NavigationPath;
             navItem.TopNavigationId = request.TopNavigationId;
+            navItem.Priority = request.Priority;
             await _navigationItemService.UpdateAsync(navItem, cancellationToken);
             return new();
         }
